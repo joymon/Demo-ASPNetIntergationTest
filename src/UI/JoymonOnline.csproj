@@ -43,19 +43,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsQuery">
-      <HintPath>..\..\..\Binaries\CsQuery.dll</HintPath>
+      <HintPath>..\..\binaries\CsQuery.dll</HintPath>
     </Reference>
     <Reference Include="en-html2enml">
-      <HintPath>..\..\..\Binaries\en-html2enml.dll</HintPath>
+      <HintPath>..\..\binaries\en-html2enml.dll</HintPath>
     </Reference>
     <Reference Include="Evernote">
-      <HintPath>..\..\..\Binaries\Evernote.dll</HintPath>
+      <HintPath>..\..\binaries\Evernote.dll</HintPath>
     </Reference>
     <Reference Include="EvernoteOAuthNet">
-      <HintPath>..\..\..\Binaries\EvernoteOAuthNet.dll</HintPath>
+      <HintPath>..\..\binaries\EvernoteOAuthNet.dll</HintPath>
     </Reference>
     <Reference Include="EvernoteSDK">
-      <HintPath>..\..\..\Binaries\EvernoteSDK.dll</HintPath>
+      <HintPath>..\..\binaries\EvernoteSDK.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -63,10 +63,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="PreMailer.Net">
-      <HintPath>..\..\..\Binaries\PreMailer.Net.dll</HintPath>
+      <HintPath>..\..\binaries\PreMailer.Net.dll</HintPath>
     </Reference>
     <Reference Include="SgmlReaderDll">
-      <HintPath>..\..\..\Binaries\SgmlReaderDll.dll</HintPath>
+      <HintPath>..\..\binaries\SgmlReaderDll.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -109,7 +109,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Thrift">
-      <HintPath>..\..\..\Binaries\Thrift.dll</HintPath>
+      <HintPath>..\..\binaries\Thrift.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
