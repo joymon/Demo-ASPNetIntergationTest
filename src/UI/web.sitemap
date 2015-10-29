@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+	<siteMapNode title="Home" url="Default.aspx">
+		<siteMapNode title="Resume" url="Resume.aspx" />
+    <siteMapNode title="Blogs" url="Blogs.aspx" />
+		<siteMapNode title="Links" url="Links.aspx" />
+    <siteMapNode title="Projects"
+                 url="Projects.aspx" />
+      <!--	<siteMapNode title="Photos" url="Photos.aspx" >
+				<siteMapNode title="Details" url="Details.aspx" />
+			</siteMapNode>
+		</siteMapNode>-->
+		
+		<siteMapNode title="Changelog" url="Changelog.aspx" />
+		
+	</siteMapNode>
+</siteMap>

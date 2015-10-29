@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{495BC34E-B588-423D-84D6-09B671B59CA6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Joymononline</RootNamespace>
+    <AssemblyName>Joymononline</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\..\..\Binaries\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="en-html2enml">
+      <HintPath>..\..\..\Binaries\en-html2enml.dll</HintPath>
+    </Reference>
+    <Reference Include="Evernote">
+      <HintPath>..\..\..\Binaries\Evernote.dll</HintPath>
+    </Reference>
+    <Reference Include="EvernoteOAuthNet">
+      <HintPath>..\..\..\Binaries\EvernoteOAuthNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EvernoteSDK">
+      <HintPath>..\..\..\Binaries\EvernoteSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PreMailer.Net">
+      <HintPath>..\..\..\Binaries\PreMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll">
+      <HintPath>..\..\..\Binaries\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Thrift">
+      <HintPath>..\..\..\Binaries\Thrift.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Projects.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Changelog.aspx" />
+    <Content Include="apps\karel\css\combined.min.css" />
+    <Content Include="apps\karel\js\jquery-2.0.0.js" />
+    <Content Include="apps\karel\js\karel.js" />
+    <Content Include="apps\karel\js\ui.js" />
+    <Content Include="apps\karel\js\world.js" />
+    <Content Include="apps\karel\karel.htm" />
+    <Content Include="App_Themes\Black\Default.css" />
+    <Content Include="App_Themes\Black\frame.css" />
+    <Content Include="App_Themes\Black\Images\album-bstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-l1.gif" />
+    <Content Include="App_Themes\Black\Images\album-l2.gif" />
+    <Content Include="App_Themes\Black\Images\album-l3.gif" />
+    <Content Include="App_Themes\Black\Images\album-l4.gif" />
+    <Content Include="App_Themes\Black\Images\album-lstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-mbl.gif" />
+    <Content Include="App_Themes\Black\Images\album-mbr.gif" />
+    <Content Include="App_Themes\Black\Images\album-mtl.gif" />
+    <Content Include="App_Themes\Black\Images\album-mtr.gif" />
+    <Content Include="App_Themes\Black\Images\album-r1.gif" />
+    <Content Include="App_Themes\Black\Images\album-r2.gif" />
+    <Content Include="App_Themes\Black\Images\album-r3.gif" />
+    <Content Include="App_Themes\Black\Images\album-r4.gif" />
+    <Content Include="App_Themes\Black\Images\album-rstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-tstretch.gif" />
+    <Content Include="App_Themes\Black\Images\background.gif" />
+    <Content Include="App_Themes\Black\Images\background_old.gif" />
+    <Content Include="App_Themes\Black\Images\background_old1.gif" />
+    <Content Include="App_Themes\Black\Images\bg_body.jpg" />
+    <Content Include="App_Themes\Black\Images\bullet-1.gif" />
+    <Content Include="App_Themes\Black\Images\bullet-2.gif" />
+    <Content Include="App_Themes\Black\Images\button-add.gif" />
+    <Content Include="App_Themes\Black\Images\button-cancel.gif" />
+    <Content Include="App_Themes\Black\Images\button-create.gif" />
+    <Content Include="App_Themes\Black\Images\button-delete.gif" />
+    <Content Include="App_Themes\Black\Images\button-download.gif" />
+    <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
+    <Content Include="App_Themes\Black\Images\button-edit.gif" />
+    <Content Include="App_Themes\Black\Images\button-first.jpg" />
+    <Content Include="App_Themes\Black\Images\button-gallery.jpg" />
+    <Content Include="App_Themes\Black\Images\button-import.gif" />
+    <Content Include="App_Themes\Black\Images\button-insert.gif" />
+    <Content Include="App_Themes\Black\Images\button-last.jpg" />
+    <Content Include="App_Themes\Black\Images\button-login.gif" />
+    <Content Include="App_Themes\Black\Images\button-next.jpg" />
+    <Content Include="App_Themes\Black\Images\button-play.jpg" />
+    <Content Include="App_Themes\Black\Images\button-prev.jpg" />
+    <Content Include="App_Themes\Black\Images\button-rename.gif" />
+    <Content Include="App_Themes\Black\Images\button-save.gif" />
+    <Content Include="App_Themes\Black\Images\button-tog24.jpg" />
+    <Content Include="App_Themes\Black\Images\button-tog8.jpg" />
+    <Content Include="App_Themes\Black\Images\footer.gif" />
+    <Content Include="App_Themes\Black\Images\frame-bot--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-bot-x-.gif" />
+    <Content Include="App_Themes\Black\Images\frame-botx--.gif" />
+    <Content Include="App_Themes\Black\Images\frame-mid--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-midx--.gif" />
+    <Content Include="App_Themes\Black\Images\frame-top--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-top-x-.gif" />
+    <Content Include="App_Themes\Black\Images\frame-topx--.gif" />
+    <Content Include="App_Themes\Black\Images\header.gif" />
+    <Content Include="App_Themes\Black\Images\photonav.gif" />
+    <Content Include="App_Themes\Black\Images\spacer.gif" />
+    <Content Include="App_Themes\Black\Images\toppic_bg.gif" />
+    <Content Include="App_Themes\Black\Images\whitedot.GIF" />
+    <Content Include="Blogs.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Images\History\V1\1-defaultaspx.png" />
+    <Content Include="Images\History\V1\2-resumeaspx.png" />
+    <Content Include="Images\History\V1\3-blogsaspx.png" />
+    <Content Include="Images\History\V1\4-linksaspx.png" />
+    <Content Include="Images\placeholder-100.jpg" />
+    <Content Include="Images\placeholder-200.jpg" />
+    <Content Include="Images\placeholder-600.jpg" />
+    <Content Include="Links.aspx" />
+    <Content Include="Resume.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Changelog.aspx.cs">
+      <DependentUpon>Changelog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Changelog.aspx.designer.cs">
+      <DependentUpon>Changelog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataManagement\BlogDataProvider.cs" />
+    <Compile Include="Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataManagement\DataProviderFactory.cs" />
+    <Compile Include="DataManagement\EvernoteDataProvider.cs" />
+    <Compile Include="DataManagement\GitHubDataProvider.cs" />
+    <Compile Include="DataManagement\IWhatsNewDataProvider.cs" />
+    <Compile Include="DataManagement\IWhoAmIDataProvider.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Evernote\MemoryBasedENPreferenceStore.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlTagsRemover.cs" />
+    <Compile Include="Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resume.aspx.designer.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Black\Default.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CreateDeployPackage.pubxml" />
+    <None Include="Properties\PublishProfiles\joymononline.in - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\joymononline.pubxml" />
+    <None Include="Properties\PublishProfiles\joymononlinelocal.pubxml" />
+    <Content Include="Uploads\Joy_resume.pdf" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
