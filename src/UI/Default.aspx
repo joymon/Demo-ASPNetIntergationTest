@@ -34,7 +34,7 @@
 			I graduated in the year of 2005 from <a href="http://www.annauniv.edu/" target="_blank">Anna university Chennai</a> with specialization in Computer Science.
 			The diploma is also in the same computer science which is obtained from <a href="http://www.sreeramapoly.org/" target="_blank"> Sree Rama Govt. Polytechnic, Triprayar</a> in the year 2002.Schools I studied are <a href="https://www.facebook.com/SKHSSApm" target="_blank" >S.K.H.S Anandapuram</a>, I.J.L.P.S. Kallettumkara and St.Joseph's E.M.H.S Anandapuram.</p>
 			<p>I was born in the year 1984 in a small Christian family.My family members include My father,mother,sister and aunt.
-			.My father is an ex-government employee,mother is a teacher and my sister working as registered nurse. Married to Dhanya in the year 2012 and we got our first gift Johan in 2014.</p>
+			.My father is an ex-government employee,mother is a retired teacher and my sister working as registered nurse. Married to Dhanya in the year 2012 and we got our first gift Johan in 2014.</p>
 			
 		</div>
 	</div>

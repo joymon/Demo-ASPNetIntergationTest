@@ -13,9 +13,9 @@ namespace JoymonOnline.IntegrationTests
     /// Summary description for MVCIntegrationFrameworkTest
     /// </summary>
     [TestClass]
-    public class MVCIntegrationFrameworkTest
+    public class PageLoadTests
     {
-        public MVCIntegrationFrameworkTest()
+        public PageLoadTests()
         {
             //
             // TODO: Add constructor logic here
@@ -72,9 +72,16 @@ namespace JoymonOnline.IntegrationTests
             using (var browser = new Browser())
             {
                 var result = browser.Get("/");
-
                 Assert.IsTrue(result.StatusCode== 200, "Main page failed");
-
+            }
+        }
+        [TestMethod]
+        public void TestBlogsPage()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/Blogs.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
             }
         }
     }
