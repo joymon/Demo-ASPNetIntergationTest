@@ -76,11 +76,47 @@ namespace JoymonOnline.IntegrationTests
             }
         }
         [TestMethod]
+        public void TestResumePage()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/Resume.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
+            }
+        }
+        [TestMethod]
         public void TestBlogsPage()
         {
             using (var browser = new Browser())
             {
                 var result = browser.Get("/Blogs.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
+            }
+        }
+        [TestMethod]
+        public void TestLinksPage()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/Links.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
+            }
+        }
+        [TestMethod]
+        public void TestProjectsPage()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/Projects.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
+            }
+        }
+        [TestMethod]
+        public void TestChangelogPage()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/Changelog.aspx");
                 Assert.IsTrue(result.StatusCode == 200, "Main page failed");
             }
         }
