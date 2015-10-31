@@ -5,15 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace JoymonOnline.IntegrationTests
 {
-    [TestClass]
-    public class PageTitleTests
+    public abstract class IntegrationTest
     {
         [TestInitialize()]
-        public void MyTestInitialize()
+        public virtual void Initialize()
         {
-            //Temp catch to see why this is not working in VSOnline CI
-          
+            Browser.InitializeAspNetRuntime(
+                  Path.GetFullPath(@"..\..\..\UI"));
         }
-     
     }
 }
