@@ -13,7 +13,7 @@ namespace JoymonOnline.IntegrationTests
     /// Summary description for MVCIntegrationFrameworkTest
     /// </summary>
     [TestClass]
-    public class PageLoadTests
+    public class PageLoadTests : IntegrationTest
     {
         public PageLoadTests()
         {
@@ -51,15 +51,7 @@ namespace JoymonOnline.IntegrationTests
         // Use ClassCleanup to run code after all tests in a class have run
         // [ClassCleanup()]
         // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        [TestInitialize()]
-        public void MyTestInitialize() {
-            //Temp catch to see why this is not working in VSOnline CI
-                Browser.InitializeAspNetRuntime(
-                       Path.GetFullPath(@"..\..\..\UI"));
-        }
-        //
+
         // Use TestCleanup to run ecode after each test has run
         // [TestCleanup()]
         // public void MyTestCleanup() { }
@@ -72,7 +64,7 @@ namespace JoymonOnline.IntegrationTests
             using (var browser = new Browser())
             {
                 var result = browser.Get("/");
-                Assert.IsTrue(result.StatusCode== 200, "Main page failed");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
             }
         }
         [TestMethod]
@@ -117,6 +109,19 @@ namespace JoymonOnline.IntegrationTests
             using (var browser = new Browser())
             {
                 var result = browser.Get("/Changelog.aspx");
+                Assert.IsTrue(result.StatusCode == 200, "Main page failed");
+            }
+        }
+        /// <summary>
+        /// Error page test
+        /// </summary>
+        /// <remarks>Why its 200. Need to change to 404</remarks>
+        [TestMethod]
+        public void WhenWrongUrlIsRequested_ShouldReturn()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/PageNotExists.aspx");
                 Assert.IsTrue(result.StatusCode == 200, "Main page failed");
             }
         }
