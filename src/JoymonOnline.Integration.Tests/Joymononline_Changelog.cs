@@ -5,6 +5,7 @@ using System.Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using System.Web.UI;
 using System.Diagnostics;
+using FakeHost;
 
 namespace UI.Tests
 {
@@ -31,63 +32,24 @@ namespace UI.Tests
         [TestInitialize]
         public void Initialize()
         {
-            //Debugger.Launch();
+            Browser.InitializeAspNetRuntime(
+                             Path.GetFullPath(@"..\..\..\UI"));
         }
-        
-        
-        //[TestMethod]
         [HostType("ASP.NET")]
         [UrlToTest(Common.BaseUrl + "changelog.aspx")]
         public void WhenChangeLogPageIsRequested_TitleShouldBeProper()
         {
             Page page = TestContext.RequestedPage;
-            //Debugger.Break();
-            //Assert.IsTrue(UrlIsValid(url));
             Assert.IsTrue(page.Title.Equals("Joymononline | Changelog"));
         }
-        /// <summary>
-        /// This method will check a url to see that it does not return server or protocol errors
-        /// </summary>
-        /// <param name="url">The path to check</param>
-        /// <returns></returns>
-        /// <remarks>http://stackoverflow.com/questions/924679/c-sharp-how-can-i-check-if-a-url-exists-is-valid</remarks>
-        public bool UrlIsValid(string url)
+        [TestMethod]
+        public void WhenChangeLogPageIsRequested_ShouldReturnWithProperTitle()
         {
-            try
+            using (var browser = new Browser())
             {
-                HttpWebRequest request = HttpWebRequest.Create(url) as HttpWebRequest;
-                request.Timeout = 5000; //set the timeout to 5 seconds to keep the user from waiting too long for the page to load
-                request.Method = "HEAD"; //Get only the header information -- no need to download any content
-
-                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-
-                int statusCode = (int)response.StatusCode;
-                if (statusCode >= 100 && statusCode < 400) //Good requests
-                {
-                    return true;
-                }
-                else if (statusCode >= 500 && statusCode <= 510) //Server Errors
-                {
-                    Console.WriteLine(String.Format("The remote server has thrown an internal error. Url is not valid: {0}", url));
-                    return false;
-                }
+                var result = browser.Get("/changelog.aspx");
+                Assert.IsTrue(result.ResponseText.Contains("Joymon Online | Changelog"), "Default page is wrong");
             }
-            catch (WebException ex)
-            {
-                if (ex.Status == WebExceptionStatus.ProtocolError) //400 errors
-                {
-                    return false;
-                }
-                else
-                {
-                    Console.WriteLine(String.Format("Unhandled status [{0}] returned for url: {1}", ex.Status, url), ex);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(String.Format("Could not test url {0}.", url), ex);
-            }
-            return false;
         }
     }
 }

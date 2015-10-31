@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Joymononline | Changelog" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+﻿<%@ Page Title="Joymon Online | Changelog" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Changelog.aspx.cs" Inherits="Joymononline.Changelog" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
