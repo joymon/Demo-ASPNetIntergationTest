@@ -13,7 +13,7 @@ namespace Joymononline
         }
         public static IWhoAmIDataProvider GetWhoAmIDataProvider()
         {
-            return new EvernoteDataProvider();
+            return new GitHubDataProvider();
         }
     }
 }

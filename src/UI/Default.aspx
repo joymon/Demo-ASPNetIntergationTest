@@ -29,13 +29,7 @@
 			</div>
 			<hr	/>
 			<h4>Who Am I ?? </h4>
-			<p>I am a software engineer currently working in  <a href="http://www.orioninc.com" target="_blank"> Orion Inc</a> located at New Jersey, US.I have specialized mainly in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Silverlight etc...My earlier technologies were .net windows forms and ASP.Net web forms.</p>
-			<p>Regarding education,I completed MBA from <a href="http://www.b-u.ac.in/sde/default.asp" target="_blank">Bharatiar university</a> Coimbatore specialized in <a href="http://www.b-u.ac.in/sde/courses.html" target="_blank">ISM (Information Systems Management)</a>.My previous courses are B.Tech and Diploma.
-			I graduated in the year of 2005 from <a href="http://www.annauniv.edu/" target="_blank">Anna university Chennai</a> with specialization in Computer Science.
-			The diploma is also in the same computer science which is obtained from <a href="http://www.sreeramapoly.org/" target="_blank"> Sree Rama Govt. Polytechnic, Triprayar</a> in the year 2002.Schools I studied are <a href="https://www.facebook.com/SKHSSApm" target="_blank" >S.K.H.S Anandapuram</a>, I.J.L.P.S. Kallettumkara and St.Joseph's E.M.H.S Anandapuram.</p>
-			<p>I was born in the year 1984 in a small Christian family.My family members include My father,mother,sister and aunt.
-			.My father is an ex-government employee,mother is a retired teacher and my sister working as registered nurse. Married to Dhanya in the year 2012 and we got our first gift Johan in 2014.</p>
-			
+            <%=DataProviderFactory.GetWhoAmIDataProvider().GetData() %>
 		</div>
 	</div>
 

@@ -6,8 +6,16 @@ using System.Web;
 
 namespace Joymononline
 {
-    public class GitHubDataProvider : IWhatsNewDataProvider
+    public class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider
     {
+        string IWhoAmIDataProvider.GetData()
+        {
+            string url = "http://joymon.github.io/Data/Home/WhoAmI.html";
+            WebClient client = new WebClient();
+            string result = client.DownloadString(url);
+            return result;
+        }
+
         string IWhatsNewDataProvider.GetData()
         {
         string url="http://joymon.github.io/Data/Home/whatsnew.json";
