@@ -11,7 +11,7 @@ namespace JoymonOnline.IntegrationTests
         public virtual void Initialize()
         {
             Browser.InitializeAspNetRuntime(
-                  Path.GetFullPath(@"..\..\..\UI"));
+                  Path.GetFullPath(@"..\..\..\JoymonOnline"));
         }
     }
 }
