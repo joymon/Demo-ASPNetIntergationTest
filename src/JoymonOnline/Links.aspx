@@ -26,6 +26,13 @@
                 <dt><a href="http://www.linkedin.com/pub/6/589/203" target="_blank">LinkedIn</a></dt>
                 <dd>LinkedIn.</dd>
             </dl>
+            <h4>Technology profiles</h4>
+            <dl>
+                <dt><a href="http://stackoverflow.com/users/181832/joymon">Stackoverflow</a></dt>
+                <dd>Question answer site for developers</dd>
+                <dt><a href="https://github.com/joymon/">Github</a></dt>
+                <dd>Source code repository for my open source projects.</dd>
+            </dl>
             <h4>Media Sites</h4>
             <dl>
                 <dt><a href="http://picasaweb.google.com/joymon" target="_blank">Picasa photo album</a></dt>
