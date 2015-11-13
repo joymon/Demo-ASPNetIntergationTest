@@ -7,6 +7,7 @@
 
     <div class="page" id="links">
         <div id="content">
+            <h3>Version <%= JoymonOnline.VersionProvider.Version.Value %></h3>
             <h3>Changelog</h3>
             <p>Here I write the history and evolution of my web site. It helps me look at my past and analyze how far I improved my site.</p>
             <h4>V5</h4>
