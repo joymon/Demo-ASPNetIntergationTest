@@ -78,7 +78,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UI\JoymonOnline.csproj">
+    <ProjectReference Include="..\JoymonOnline\JoymonOnline.csproj">
       <Project>{495bc34e-b588-423d-84d6-09b671b59ca6}</Project>
       <Name>JoymonOnline</Name>
     </ProjectReference>
