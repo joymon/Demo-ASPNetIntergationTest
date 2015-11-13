@@ -7,10 +7,10 @@ using System.Web.UI;
 using System.Diagnostics;
 using FakeHost;
 
-namespace UI.Tests
+namespace JoymonOnline.IntegrationTests
 {
     [TestClass]
-    public class Joymononline_Blogs
+    public class Joymononline_Blogs :IntegrationTest
     {
         private TestContext testContextInstance;
         /// <summary>
@@ -29,13 +29,6 @@ namespace UI.Tests
                 testContextInstance = value;
             }
         }
-        [TestInitialize]
-        public void Initialize()
-        {
-            Browser.InitializeAspNetRuntime(
-                             Path.GetFullPath(@"..\..\..\UI"));
-        }
-
         [HostType("ASP.NET")]
         [UrlToTest(Common.BaseUrl + "Blogs.aspx")]
         public void WhenChangeLogPageIsRequested_TitleShouldBeProper()

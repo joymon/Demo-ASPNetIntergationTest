@@ -7,10 +7,10 @@ using System.Web.UI;
 using System.Diagnostics;
 using FakeHost;
 
-namespace UI.Tests
+namespace JoymonOnline.IntegrationTests
 {
     [TestClass]
-    public class Joymononline_Default
+    public class Joymononline_Default :IntegrationTest
     {
         private TestContext testContextInstance;
         /// <summary>
@@ -28,12 +28,6 @@ namespace UI.Tests
             {
                 testContextInstance = value;
             }
-        }
-        [TestInitialize]
-        public void Initialize()
-        {
-            Browser.InitializeAspNetRuntime(
-                 Path.GetFullPath(@"..\..\..\UI"));
         }
 
         /// <summary>
