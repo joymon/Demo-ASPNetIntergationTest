@@ -75,8 +75,6 @@
     <Content Include="apps\karel\karel.htm" />
     <Content Include="App_Themes\Black\Default.css" />
     <Content Include="App_Themes\Black\Images\background.gif" />
-    <Content Include="App_Themes\Black\Images\bullet-1.gif" />
-    <Content Include="App_Themes\Black\Images\bullet-2.gif" />
     <Content Include="App_Themes\Black\Images\footer.gif" />
     <Content Include="App_Themes\Black\Images\header.gif" />
     <Content Include="App_Themes\Black\Images\spacer.gif" />
