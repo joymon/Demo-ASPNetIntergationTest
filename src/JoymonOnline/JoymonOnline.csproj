@@ -73,7 +73,6 @@
     <Content Include="apps\karel\js\world.js" />
     <Content Include="apps\karel\karel.htm" />
     <Content Include="App_Themes\Black\Default.css" />
-    <Content Include="App_Themes\Black\frame.css" />
     <Content Include="App_Themes\Black\Images\album-bstretch.gif" />
     <Content Include="App_Themes\Black\Images\album-l1.gif" />
     <Content Include="App_Themes\Black\Images\album-l2.gif" />
@@ -115,7 +114,6 @@
     <Content Include="Images\History\V1\4-linksaspx.png" />
     <Content Include="Links.aspx" />
     <Content Include="Resume.aspx" />
-    <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -219,6 +217,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
