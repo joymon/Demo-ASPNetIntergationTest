@@ -10,7 +10,7 @@ namespace JoymonOnline.IntegrationTests
         [TestMethod]
         public void WhenDefaultCSSIsRequested_ShouldReturn200AndContent()
         {
-            int expectedSize = 7972;
+            int expectedSize = 7914;
             using (var browser = new Browser())
             {
                 var result = browser.Get("/App_Themes/Black/Default.css");
