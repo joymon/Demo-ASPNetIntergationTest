@@ -81,8 +81,6 @@
     <Content Include="Blogs.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Images\History\V1\1-defaultaspx.png" />
-    <Content Include="Images\History\V1\2-resumeaspx.png" />
-    <Content Include="Images\History\V1\3-blogsaspx.png" />
     <Content Include="Images\History\V1\4-linksaspx.png" />
     <Content Include="Links.aspx" />
     <Content Include="Resume.aspx" />
