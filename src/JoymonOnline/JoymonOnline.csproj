@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
     <Content Include="Projects.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -73,39 +74,12 @@
     <Content Include="apps\karel\js\world.js" />
     <Content Include="apps\karel\karel.htm" />
     <Content Include="App_Themes\Black\Default.css" />
-    <Content Include="App_Themes\Black\Images\album-bstretch.gif" />
-    <Content Include="App_Themes\Black\Images\album-l1.gif" />
-    <Content Include="App_Themes\Black\Images\album-l2.gif" />
-    <Content Include="App_Themes\Black\Images\album-l3.gif" />
-    <Content Include="App_Themes\Black\Images\album-l4.gif" />
-    <Content Include="App_Themes\Black\Images\album-lstretch.gif" />
-    <Content Include="App_Themes\Black\Images\album-mbl.gif" />
-    <Content Include="App_Themes\Black\Images\album-mbr.gif" />
-    <Content Include="App_Themes\Black\Images\album-mtl.gif" />
-    <Content Include="App_Themes\Black\Images\album-mtr.gif" />
-    <Content Include="App_Themes\Black\Images\album-r1.gif" />
-    <Content Include="App_Themes\Black\Images\album-r2.gif" />
-    <Content Include="App_Themes\Black\Images\album-r3.gif" />
-    <Content Include="App_Themes\Black\Images\album-r4.gif" />
-    <Content Include="App_Themes\Black\Images\album-rstretch.gif" />
-    <Content Include="App_Themes\Black\Images\album-tstretch.gif" />
     <Content Include="App_Themes\Black\Images\background.gif" />
-    <Content Include="App_Themes\Black\Images\background_old.gif" />
-    <Content Include="App_Themes\Black\Images\background_old1.gif" />
     <Content Include="App_Themes\Black\Images\bullet-1.gif" />
     <Content Include="App_Themes\Black\Images\bullet-2.gif" />
     <Content Include="App_Themes\Black\Images\footer.gif" />
-    <Content Include="App_Themes\Black\Images\frame-bot--x.gif" />
-    <Content Include="App_Themes\Black\Images\frame-bot-x-.gif" />
-    <Content Include="App_Themes\Black\Images\frame-botx--.gif" />
-    <Content Include="App_Themes\Black\Images\frame-mid--x.gif" />
-    <Content Include="App_Themes\Black\Images\frame-midx--.gif" />
-    <Content Include="App_Themes\Black\Images\frame-top--x.gif" />
-    <Content Include="App_Themes\Black\Images\frame-top-x-.gif" />
-    <Content Include="App_Themes\Black\Images\frame-topx--.gif" />
     <Content Include="App_Themes\Black\Images\header.gif" />
     <Content Include="App_Themes\Black\Images\spacer.gif" />
-    <Content Include="App_Themes\Black\Images\whitedot.GIF" />
     <Content Include="Blogs.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Images\History\V1\1-defaultaspx.png" />
@@ -218,6 +192,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\" />
     <Folder Include="Styles\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
@@ -234,7 +209,6 @@
     <None Include="Properties\PublishProfiles\joymononline.in - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\joymononline.pubxml" />
     <None Include="Properties\PublishProfiles\joymononlinelocal.pubxml" />
-    <Content Include="Uploads\Joy_resume.pdf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
