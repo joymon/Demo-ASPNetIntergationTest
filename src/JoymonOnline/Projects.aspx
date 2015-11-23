@@ -25,6 +25,15 @@
                 <br />Application url
                 <a href="http://joymononline.in/apps/prayerbook/index.html">http://joymononline.in/apps/prayerbook/index.html</a>
             </p>
+            <h4> JoyfulTools for Visual Studio</h4>
+            <p class="first">
+                This is a Visual Studio Extension to do things easily. Mainly related to improve code quality. Current capabilities are removal of unwanted whitespaces, commented code.
+                <br />
+                Application url
+                <a href ="https://visualstudiogallery.msdn.microsoft.com/c9256992-8b91-4448-b31c-fa1cd6a27455">https://visualstudiogallery.msdn.microsoft.com/c9256992-8b91-4448-b31c-fa1cd6a27455</a>
+                <br />
+                Source code <a href="https://github.com/joymon/joyful-visualstudio">https://github.com/joymon/joyful-visualstudio</a>
+            </p>
         </div>
     </div>
 
