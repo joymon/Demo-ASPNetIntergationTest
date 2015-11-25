@@ -17,12 +17,12 @@ namespace JoymonOnline.Tests
             Assert.IsNotNull(provider);
         }
         [TestMethod]
-        public void WhenAProjectNameIsGiven_GetDetails()
+        public void WhenCalled_GetDetails()
         {
             //TODO - this is calling service. Use DI to avoid that.
             IProjectDataProvider provider = new GitHubDataProvider();
             List<Project> projects= provider.GetProjects().ToList();
-            Assert.IsTrue(projects.Count() == 1, "Expected {0}.But actual was {1}", 1, projects.Count());
+            Assert.IsTrue(projects.Count() == 2, "Expected {0}.But actual was {1}", 1, projects.Count());
         }
     }
 }

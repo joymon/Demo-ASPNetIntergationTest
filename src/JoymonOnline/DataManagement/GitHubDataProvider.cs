@@ -8,7 +8,7 @@ using System.Web.Script.Serialization;
 
 namespace Joymononline
 {
-    internal class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider, IProjectDataProvider
+    internal class GitHubDataProvider : IWhatsNewDataProvider, IWhoAmIDataProvider, IProjectDataProvider
     {
         string IWhoAmIDataProvider.GetData()
         {
@@ -20,22 +20,18 @@ namespace Joymononline
 
         string IWhatsNewDataProvider.GetData()
         {
-        string url="http://joymon.github.io/Data/Home/whatsnew.json";
+            string url = "http://joymon.github.io/Data/Home/whatsnew.json";
             WebClient client = new WebClient();
-            string result=client.DownloadString(url);
+            string result = client.DownloadString(url);
             return result;
         }
 
         IEnumerable<Project> IProjectDataProvider.GetProjects()
         {
-           return GetProjectUrls()
-                .Select((url) => GetProjectFromGitHubUrl(url));
-        }
-
-        private Project GetProjectFromGitHubUrl(string url)
-        {
-            
-            return GetProjectFromJSON(GetJSONFromGitHubAPI(url));
+            return GetProjectNames()
+                .Select((projectName) => GetGitHubAPIUrlFromProjectName(projectName))
+                 .Select((url) => GetJSONFromGitHubAPI(url))
+                 .Select((json) => GetProjectFromJSON(json));
         }
 
         private string GetJSONFromGitHubAPI(string url)
@@ -49,14 +45,24 @@ namespace Joymononline
         private Project GetProjectFromJSON(string v)
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
-            dynamic projectNode=ser.Deserialize<dynamic>(v);
-            return new Project() { Name=projectNode["name"]};
+            dynamic projectNode = ser.Deserialize<dynamic>(v);
+            return new Project()
+            {
+                Name = projectNode["name"],
+                Description = projectNode["description"],
+                SourceUrl = projectNode["homepage"],
+                Url = projectNode["html_url"]
+            };
         }
-
-        private IEnumerable<string> GetProjectUrls()
+        private string GetGitHubAPIUrlFromProjectName(string projecName)
+        {
+            return string.Format("https://api.github.com/repos/joymon/{0}", projecName);
+        }
+        private IEnumerable<string> GetProjectNames()
         {
             return new List<string>() {
-                "https://api.github.com/repos/joymon/joyful-visualstudio"
+                "joyful-visualstudio",
+                "Orchestration"
             };
         }
     }
