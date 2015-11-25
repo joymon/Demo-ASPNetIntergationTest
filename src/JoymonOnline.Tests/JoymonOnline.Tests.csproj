@@ -56,6 +56,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ExceptionExtensions_GetFullMessage.cs" />
+    <Compile Include="GitHubProvider_GetProjects.cs" />
     <Compile Include="HtmlTagsRemover_Remove.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VersionProvider_Version_Value.cs" />

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Joymononline
 {
-    public class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider
+    public class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider, IProjectDataProvider
     {
         string IWhoAmIDataProvider.GetData()
         {
@@ -22,6 +22,11 @@ namespace Joymononline
             WebClient client = new WebClient();
             string result=client.DownloadString(url);
             return result;
+        }
+
+        IEnumerable<Project> IProjectDataProvider.GetProjects()
+        {
+            throw new NotImplementedException();
         }
     }
 }

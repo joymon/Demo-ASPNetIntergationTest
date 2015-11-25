@@ -92,8 +92,8 @@
     <Content Include="About.aspx" />
     <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
     <Content Include="Projects.aspx" />
-    <Content Include="Account\ChangePasswordSuccess.aspx" />
-    <Content Include="Account\Login.aspx" />
+    <Content Include="Entities\ChangePasswordSuccess.aspx" />
+    <Content Include="Entities\Login.aspx" />
     <Content Include="Changelog.aspx" />
     <Content Include="apps\karel\css\combined.min.css" />
     <Content Include="apps\karel\js\jquery-2.0.0.js" />
@@ -130,7 +130,9 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataManagement\Core\IProjectDataProvider.cs" />
     <Compile Include="DataManagement\VersionProvider.cs" />
+    <Compile Include="Entities\Project.cs" />
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -138,18 +140,18 @@
     <Compile Include="Projects.aspx.designer.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+    <Compile Include="Entities\ChangePasswordSuccess.aspx.cs">
       <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+    <Compile Include="Entities\ChangePasswordSuccess.aspx.designer.cs">
       <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Login.aspx.cs">
+    <Compile Include="Entities\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
+    <Compile Include="Entities\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Changelog.aspx.cs">
@@ -167,11 +169,11 @@
     <Compile Include="Blogs.aspx.designer.cs">
       <DependentUpon>Blogs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataManagement\DataProviderFactory.cs" />
+    <Compile Include="DataManagement\Core\DataProviderFactory.cs" />
     <Compile Include="DataManagement\EvernoteDataProvider.cs" />
     <Compile Include="DataManagement\GitHubDataProvider.cs" />
-    <Compile Include="DataManagement\IWhatsNewDataProvider.cs" />
-    <Compile Include="DataManagement\IWhoAmIDataProvider.cs" />
+    <Compile Include="DataManagement\Core\IWhatsNewDataProvider.cs" />
+    <Compile Include="DataManagement\Core\IWhoAmIDataProvider.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,7 +221,6 @@
     <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
