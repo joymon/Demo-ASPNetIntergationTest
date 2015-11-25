@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Joymononline
 {
-    public class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider, IProjectDataProvider
+    internal class GitHubDataProvider : IWhatsNewDataProvider,IWhoAmIDataProvider, IProjectDataProvider
     {
         string IWhoAmIDataProvider.GetData()
         {
