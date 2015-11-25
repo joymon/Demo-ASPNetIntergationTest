@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
+using System.Web.Script.Serialization;
 
 namespace Joymononline
 {
@@ -26,7 +28,36 @@ namespace Joymononline
 
         IEnumerable<Project> IProjectDataProvider.GetProjects()
         {
-            throw new NotImplementedException();
+           return GetProjectUrls()
+                .Select((url) => GetProjectFromGitHubUrl(url));
+        }
+
+        private Project GetProjectFromGitHubUrl(string url)
+        {
+            
+            return GetProjectFromJSON(GetJSONFromGitHubAPI(url));
+        }
+
+        private string GetJSONFromGitHubAPI(string url)
+        {
+            WebClient client = new WebClient();
+            client.Headers.Add("User-Agent", "API");
+            string result = client.DownloadString(url);
+            return result;
+        }
+
+        private Project GetProjectFromJSON(string v)
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            dynamic projectNode=ser.Deserialize<dynamic>(v);
+            return new Project() { Name=projectNode["name"]};
+        }
+
+        private IEnumerable<string> GetProjectUrls()
+        {
+            return new List<string>() {
+                "https://api.github.com/repos/joymon/joyful-visualstudio"
+            };
         }
     }
 }
