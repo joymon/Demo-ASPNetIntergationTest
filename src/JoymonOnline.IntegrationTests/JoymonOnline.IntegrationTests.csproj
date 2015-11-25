@@ -96,6 +96,7 @@
     <Compile Include="Joymononline_Changelog.cs" />
     <Compile Include="Joymononline_Default.cs" />
     <Compile Include="Joymononline_Links.cs" />
+    <Compile Include="JoymonOnline_Projects.cs" />
     <Compile Include="Joymononline_Resume.cs" />
     <Compile Include="PageLoadTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

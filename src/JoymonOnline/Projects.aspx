@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Projects" Language="C#"
+﻿<%@ Page Title="Joymon Online | Projects" Language="C#"
      MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Projects.aspx.cs" Inherits="Joymononline.Projects" %>
 
