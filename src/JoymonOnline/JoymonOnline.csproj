@@ -131,6 +131,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataManagement\Core\IProjectDataProvider.cs" />
+    <Compile Include="DataManagement\ProjectsDataProvider.cs" />
     <Compile Include="DataManagement\VersionProvider.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Projects.aspx.cs">

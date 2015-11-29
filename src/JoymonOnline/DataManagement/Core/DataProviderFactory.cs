@@ -15,5 +15,6 @@ namespace Joymononline
         {
             return new GitHubDataProvider();
         }
+        public static Lazy<IProjectDataProvider> ProjectsDataProvider = new Lazy<IProjectDataProvider>(() => new GitHubDataProvider());
     }
 }
