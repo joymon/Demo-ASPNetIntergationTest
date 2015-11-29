@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FakeHost;
 using System.IO;
 using System.Net;
-using Joymononline;
+using JoymonOnline;
 
 namespace JoymonOnline.IntegrationTests
 {

@@ -13,5 +13,17 @@ namespace Joymononline
         {
 
         }
+        public bool GetVisibilityFromSourceUrl(object dataItem)
+        {
+            Project prj = dataItem as Project;
+            if (string.IsNullOrWhiteSpace(prj.SourceUrl))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }

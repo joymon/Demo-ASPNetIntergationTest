@@ -50,8 +50,8 @@ namespace Joymononline
             {
                 Name = projectNode["name"],
                 Description = projectNode["description"],
-                SourceUrl = projectNode["homepage"],
-                Url = projectNode["html_url"]
+                SourceUrl = projectNode["html_url"],
+                Url = projectNode["homepage"]
             };
         }
         private string GetGitHubAPIUrlFromProjectName(string projecName)
@@ -62,7 +62,8 @@ namespace Joymononline
         {
             return new List<string>() {
                 "joyful-visualstudio",
-                "Orchestration"
+                "Orchestration",
+                "Karel",
             };
         }
     }
