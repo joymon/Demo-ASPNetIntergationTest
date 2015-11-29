@@ -22,7 +22,7 @@ namespace JoymonOnline.Tests
             //TODO - this is calling service. Use DI to avoid that.
             IProjectDataProvider provider = new GitHubDataProvider();
             List<Project> projects= provider.GetProjects().ToList();
-            Assert.IsTrue(projects.Count() == 2, "Expected {0}.But actual was {1}", 1, projects.Count());
+            Assert.IsTrue(projects.Count() == 3, "Expected {0}.But actual was {1}", 1, projects.Count());
         }
     }
 }
