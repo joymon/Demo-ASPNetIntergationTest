@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Script.Serialization;
+using JoymonOnline;
 
 namespace Joymononline
 {
@@ -22,8 +24,21 @@ namespace Joymononline
         {
             string url = "http://joymon.github.io/Data/Home/whatsnew.json";
             WebClient client = new WebClient();
+            
             string result = client.DownloadString(url);
             return result;
+        }
+
+        private void AddAuthorrizationToken(WebClient client)
+        {
+            if (string.IsNullOrWhiteSpace(GitHubConfiguration.GitHubAPIToken.Value))
+            {
+                Console.WriteLine("GitHubAPI.Value is not available. Proceeding without authentication");
+            }
+            else
+            {
+                client.Headers.Add("Authorization", "token " + GitHubConfiguration.GitHubAPIToken.Value);
+            }
         }
 
         IEnumerable<Project> IProjectDataProvider.GetProjects()
@@ -37,15 +52,16 @@ namespace Joymononline
         private string GetJSONFromGitHubAPI(string url)
         {
             WebClient client = new WebClient();
+            AddAuthorrizationToken(client);
             client.Headers.Add("User-Agent", "API");
             string result = client.DownloadString(url);
             return result;
         }
 
-        private Project GetProjectFromJSON(string v)
+        private Project GetProjectFromJSON(string json)
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
-            dynamic projectNode = ser.Deserialize<dynamic>(v);
+            dynamic projectNode = ser.Deserialize<dynamic>(json);
             return new Project()
             {
                 Name = projectNode["name"],
