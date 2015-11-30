@@ -134,6 +134,7 @@
     <Compile Include="DataManagement\ProjectsDataProvider.cs" />
     <Compile Include="DataManagement\VersionProvider.cs" />
     <Compile Include="Entities\Project.cs" />
+    <Compile Include="GitHub\GitHubAPIClient.cs" />
     <Compile Include="GitHub\GitHubConfiguration.cs" />
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
