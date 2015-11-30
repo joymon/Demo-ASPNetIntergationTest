@@ -37,8 +37,6 @@
             <dl>
                 <dt><a href="http://picasaweb.google.com/joymon" target="_blank">Picasa photo album</a></dt>
                 <dd>My photos in Google picasa.</dd>
-                <dt><a href="http://flickr.com/photos/joymon" target="_blank">Flickr</a></dt>
-                <dd>Photos in Flickr.</dd>
                 <dt><a href="http://www.youtube.com/user/joygeorgek" target="_blank">Youtube</a></dt>
                 <dd>A place where I have uploaded videos.</dd>
             </dl>
