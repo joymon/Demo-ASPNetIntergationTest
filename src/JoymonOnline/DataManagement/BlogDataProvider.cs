@@ -6,7 +6,7 @@ using System.ServiceModel.Syndication;
 using System.Web;
 using System.Xml;
 
-namespace Joymononline
+namespace JoymonOnline
 {
     public class BlogDataProvider
     {

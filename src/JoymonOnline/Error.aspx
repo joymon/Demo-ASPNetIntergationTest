@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Joymon Online | Error" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Error.aspx.cs" Inherits="Joymononline.Error" %>
+﻿<%@ Page Title="Joymon Online | Error" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Error.aspx.cs" Inherits="JoymonOnline.Error" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
     <div class="shim column"></div>
     
