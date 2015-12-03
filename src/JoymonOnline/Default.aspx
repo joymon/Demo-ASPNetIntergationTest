@@ -1,4 +1,4 @@
-﻿<%@ Import Namespace="Joymononline" %>
+﻿<%@ Import Namespace="JoymonOnline" %>
 <%@	Page Language="C#" MasterPageFile="~/site.master" Title="Joymon Online | Home" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Joymononline.Default" %>
 
 <asp:content id="Content1" contentplaceholderid="Main" runat="server">

@@ -6,6 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using System.Web.UI;
 using System.Diagnostics;
 using FakeHost;
+using System.Linq;
 
 namespace JoymonOnline.IntegrationTests
 {
@@ -49,9 +50,9 @@ namespace JoymonOnline.IntegrationTests
             using (var browser = new Browser())
             {
                 var result = browser.Get("/Default.aspx");
-                Assert.IsTrue(result.ResponseText.Contains("Joymon Online | Home"), "Default page is wrong");
+                string actual = result.ResponseXml.Descendants("title").First().Value.Trim();
+                Assert.AreEqual("Joymon Online | Home",actual, "Default page is wrong");
             }
         }
-      
     }
 }

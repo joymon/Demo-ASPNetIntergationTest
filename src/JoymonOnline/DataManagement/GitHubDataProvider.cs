@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Script.Serialization;
 using JoymonOnline;
 
-namespace Joymononline
+namespace JoymonOnline
 {
     /// <summary>
     /// Entry point for all GitHub related data providers.

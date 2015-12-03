@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Joymon Online | Projects" Language="C#"
+﻿<%@ Page Title="Joymon Online | Projects" Language="C#" EnableViewState="false"
     MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Projects.aspx.cs" Inherits="Joymononline.Projects" %>
+    CodeBehind="Projects.aspx.cs" Inherits="JoymonOnline.Projects" %>
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="Main">
     <div class="shim column"></div>

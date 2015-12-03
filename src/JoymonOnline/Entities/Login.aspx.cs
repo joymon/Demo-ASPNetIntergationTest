@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Joymononline.Account
+namespace JoymonOnline
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace Joymononline.Account
             }
             catch (Exception ex)
             {
-                WhatsNew = ex.GetFullMessageInHTML();
+                
             }
         }
     }
