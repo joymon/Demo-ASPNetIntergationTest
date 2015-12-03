@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/site.master" AutoEventWireup="true" CodeBehind="Blogs.aspx.cs"
-    Inherits="Joymononline.Blogs" Title="Joymon Online | Blogs" %>
+    Inherits="JoymonOnline.Blogs" Title="Joymon Online | Blogs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="Server">
     <div class="shim column"></div>

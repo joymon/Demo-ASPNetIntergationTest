@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace Joymononline
+namespace JoymonOnline
 {
     /// <summary>
     /// Removes tags from html string.

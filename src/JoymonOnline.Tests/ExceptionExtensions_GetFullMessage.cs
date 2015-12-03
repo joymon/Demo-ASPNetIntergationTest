@@ -1,11 +1,7 @@
-﻿using Joymononline;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Security;
-using System.Text;
-using System.Threading.Tasks;
+using JoymonOnline;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UI.Tests
 {
