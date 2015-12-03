@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Joymononline {
+namespace JoymonOnline {
     
     
     public partial class Changelog {
