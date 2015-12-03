@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/site.master" Title="Joymon Online | Resume"
-    CodeBehind="Resume.aspx.cs" Inherits="Joymononline.Resume" %>
+    CodeBehind="Resume.aspx.cs" Inherits="JoymonOnline.Resume" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
     <div class="shim column">

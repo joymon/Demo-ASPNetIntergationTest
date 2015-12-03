@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/site.master" Title="Joymon Online | Links"
-    CodeBehind="Links.aspx.cs" Inherits="Joymononline.Links" %>
+    CodeBehind="Links.aspx.cs" Inherits="JoymonOnline.Links" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 

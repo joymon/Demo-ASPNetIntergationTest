@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Joymononline.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="JoymonOnline.Global" Language="C#" %>
