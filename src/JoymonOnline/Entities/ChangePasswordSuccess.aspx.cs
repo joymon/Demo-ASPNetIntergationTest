@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Joymononline.Account
+namespace JoymonOnline
 {
     public partial class ChangePasswordSuccess : System.Web.UI.Page
     {

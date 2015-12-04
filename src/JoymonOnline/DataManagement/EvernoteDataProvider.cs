@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Permissions;
 using System.Web;
 
-namespace Joymononline
+namespace JoymonOnline
 {
     /// <summary>
     /// Evernote data provider. Returns data from joymon@gmail.com evernote account.
