@@ -105,6 +105,7 @@
     <Compile Include="IntegrationTest.cs" />
     <Compile Include="Joymononline_Error.cs" />
     <Compile Include="ResourceLoadTests.cs" />
+    <Compile Include="JoymonOnline_ViewResume.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

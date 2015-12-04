@@ -49,14 +49,14 @@
             </p>
             <p>
                 661-750-9787<br />
-                joymon@gmail.com<br />
+                <a href="mailto:joymon@gmail.com">joymon@gmail.com</a><br />
                 www.joymononline.in<br />
-                New New Milford, New Jersey, US
+                Wayne, New Jersey, US
             </p>
             <p>
                 <a href="Uploads/joy_resume.pdf">
-                    <asp:Image ID="downloadresume" runat="Server" AlternateText="download resume in word format"
-                        SkinID="dwn_res" /></a>
+                    Download resume</a> | 
+                <a href="ViewResume.aspx" target="_blank">View resume</a>
             </p>
             <div>
                 <h4>Profile</h4>

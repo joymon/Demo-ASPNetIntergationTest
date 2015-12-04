@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Joymononline {
+namespace JoymonOnline {
     
     
-    public partial class About {
+    public partial class ViewResume {
     }
 }

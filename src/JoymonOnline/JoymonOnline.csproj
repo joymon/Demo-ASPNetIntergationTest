@@ -89,7 +89,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="ViewResume.aspx" />
     <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
     <Content Include="Projects.aspx" />
     <Content Include="Entities\ChangePasswordSuccess.aspx" />
@@ -123,12 +123,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="ViewResume.aspx.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="ViewResume.aspx.designer.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataManagement\Core\IProjectDataProvider.cs" />
     <Compile Include="DataManagement\ProjectsDataProvider.cs" />
