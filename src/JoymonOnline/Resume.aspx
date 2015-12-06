@@ -45,7 +45,7 @@
             <h3>Joy George K
             </h3>
             <p>
-                Resume 22 Mar 2015
+                Resume updated 5 Dec 2015
             </p>
             <p>
                 661-750-9787<br />
