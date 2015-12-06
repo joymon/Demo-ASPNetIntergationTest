@@ -62,8 +62,9 @@
                 <h4>Profile</h4>
                 <p class="first">
                     A passionate software engineer willing to develop systems to solve problems regardless
-                    of technology & tools. 9+ Years in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Azure
+                    of technology & tools. 10+ Years in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Azure
                     and Silverlight. Along with Microsoft technologies, also have experience in web technologies & libraries such as HTML, Javascript, CSS, jQuery, Bootstrap, Angular JS etc...
+                    <p>Interested in community activities to learn from and teach other software engineers. Frequently posts in <a href="Blogs.aspx"> blogs</a>,answers technical forums.</p>
                 </p>
             </div>
             <div>
