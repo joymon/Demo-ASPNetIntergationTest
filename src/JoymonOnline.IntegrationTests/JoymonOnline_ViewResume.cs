@@ -46,7 +46,17 @@ namespace JoymonOnline.IntegrationTests
                 Assert.AreEqual(1,actual,"iframe missing");
             }
         }
+        [TestMethod]
+        public void WhenViewResumeIsRequested_ShouldReturnIframeAndItShouldPointToPDF()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/ViewResume.aspx");
+                string src = result.ResponseXml.Descendants("iframe").First().Attribute("src").Value;
 
+                Assert.IsTrue(src.Contains("joy_resume.pdf"), "The iFrame.src is {0}. It doesn't have joy_resume.pdf",src);
+            }
+        }
         [TestMethod]
         public void WhenViewResumeIsRequested_ShouldReturnProperTtile()
         {
