@@ -95,12 +95,6 @@
     <Content Include="Entities\ChangePasswordSuccess.aspx" />
     <Content Include="Entities\Login.aspx" />
     <Content Include="Changelog.aspx" />
-    <Content Include="apps\karel\css\combined.min.css" />
-    <Content Include="apps\karel\js\jquery-2.0.0.js" />
-    <Content Include="apps\karel\js\karel.js" />
-    <Content Include="apps\karel\js\ui.js" />
-    <Content Include="apps\karel\js\world.js" />
-    <Content Include="apps\karel\karel.htm" />
     <Content Include="App_Themes\Black\Default.css" />
     <Content Include="App_Themes\Black\Images\background.gif" />
     <Content Include="App_Themes\Black\Images\footer.gif" />
@@ -218,6 +212,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="apps\karel\" />
     <Folder Include="App_Data\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
