@@ -14,8 +14,20 @@ namespace JoymonOnline
             get
             {
                 Exception ex = Server.GetLastError();
+                Response.StatusCode = GetStatusCodeFromException(ex);
                 return ex.GetFullMessage();   
             }
+        }
+
+        private int GetStatusCodeFromException(Exception ex)
+        {
+            int httpCode = 500;
+            HttpException httpEx = ex as HttpException;
+            if(httpEx != null)
+            {
+                httpCode= httpEx.GetHttpCode();
+            }
+            return httpCode;
         }
     }
 }
