@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using FakeHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -17,12 +18,13 @@ namespace JoymonOnline.IntegrationTests
             }
         }
         [TestMethod]
-        public void WhenPageIsNotValid_ReturnHTTP404()
+        public void WhenPageIsNotValid_ErrorPageShouldHaveProperTitle()
         {
             using (var browser = new Browser())
             {
                 var result = browser.Get("/PageNotExists.aspx");
-                Assert.AreEqual(404,result.StatusCode, "Statuc code for error is wrong");
+                string actual = result.ResponseXml.Descendants("title").First().Value.Trim();
+                Assert.AreEqual("Joymon Online | Error", actual, "Error page is wrong");
             }
         }
 
