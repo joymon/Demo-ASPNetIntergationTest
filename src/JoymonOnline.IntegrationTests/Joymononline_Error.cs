@@ -16,5 +16,15 @@ namespace JoymonOnline.IntegrationTests
                 Assert.IsTrue(result.ResponseText.Contains("Joymon Online | Error"), "Error page is wrong");
             }
         }
+        [TestMethod]
+        public void WhenPageIsNotValid_ReturnHTTP404()
+        {
+            using (var browser = new Browser())
+            {
+                var result = browser.Get("/PageNotExists.aspx");
+                Assert.AreEqual(404,result.StatusCode, "Statuc code for error is wrong");
+            }
+        }
+
     }
 }
