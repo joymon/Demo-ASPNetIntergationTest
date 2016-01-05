@@ -12,14 +12,7 @@ namespace JoymonOnline
         public string WhatsNew { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                WhatsNew = DataProviderFactory.GetWhoAmIDataProvider().GetData();
-            }
-            catch (Exception ex)
-            {
-                
-            }
+            
         }
     }
 }
