@@ -10,14 +10,7 @@ namespace JoymonOnline
     {
         public static Lazy<string> GitHubAPIToken = new Lazy<string>(() =>
         {
-            if (ConfigurationManager.AppSettings.AllKeys.Contains(""))
-            {
                 return ConfigurationManager.AppSettings["GitHubAPIToken"];
-            }
-            else
-            {
-                return string.Empty;
-            }
         });
     }
 }
