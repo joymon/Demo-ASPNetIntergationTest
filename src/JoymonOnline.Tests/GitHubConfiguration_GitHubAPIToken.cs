@@ -7,11 +7,11 @@ namespace JoymonOnline.Tests
     public class GitHubConfiguration_GitHubAPIToken
     {
         [TestMethod]
-        public void WhenThereIsNoConfigEntry_ReturnNull()
+        public void WhenTokenIsReadFromConfig_ShouldNotbeNull()
         {
             string expected = null;
             string actual = GitHubConfiguration.GitHubAPIToken.Value;
-            Assert.AreEqual(expected, actual, "There is not GithubAPI token");
+            Assert.AreNotEqual(expected, actual, "There is no GitHubAPIToken in app.config");
         }
     }
 }
