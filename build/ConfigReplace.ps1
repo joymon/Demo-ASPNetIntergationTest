@@ -1,7 +1,7 @@
 ﻿"Length of GithubAPIKey is " + $env:GitHubAPIKey.length
 
 $PSScriptRoot
-$appSettingsPath = Join-Path $PSScriptRoot '..\src\*\configs\appSettings.config'
+$appSettingsPath = Join-Path $PSScriptRoot '..\src\*\configs\*.config'
 $appSettingsPath
 #$xml = [xml](Get-Content $appSettingsPath)
 #$node=$xml.appSettings.add | where {$_.key -eq "GitHubAPIToken"}
