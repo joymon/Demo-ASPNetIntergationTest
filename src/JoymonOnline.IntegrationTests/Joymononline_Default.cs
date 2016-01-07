@@ -7,10 +7,12 @@ using System.Web.UI;
 using System.Diagnostics;
 using FakeHost;
 using System.Linq;
+using System.Diagnostics.CodeAnalysis;
 
 namespace JoymonOnline.IntegrationTests
 {
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class Joymononline_Default :IntegrationTest
     {
         private TestContext testContextInstance;

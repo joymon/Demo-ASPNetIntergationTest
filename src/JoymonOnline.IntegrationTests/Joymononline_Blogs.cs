@@ -6,9 +6,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using System.Web.UI;
 using System.Diagnostics;
 using FakeHost;
+using System.Diagnostics.CodeAnalysis;
 
 namespace JoymonOnline.IntegrationTests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class Joymononline_Blogs :IntegrationTest
     {

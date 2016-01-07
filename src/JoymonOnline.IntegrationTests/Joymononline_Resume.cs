@@ -30,11 +30,6 @@ namespace JoymonOnline.IntegrationTests
                 testContextInstance = value;
             }
         }
-        [TestInitialize]
-        public void Initialize()
-        {
-            //Debugger.Launch();
-        }
         #endregion
         [TestMethod]
         public void WhenResumePageIsRequested_ShouldReturnProperTitle()
