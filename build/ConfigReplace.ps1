@@ -1,12 +1,8 @@
 ﻿"Length of GithubAPIKey is " + $env:GitHubAPIKey.length
-
+#Do not show the key as it should be secure. Show the length to understand its present in the AppVeyor.
 $PSScriptRoot
 $appSettingsPath = Join-Path $PSScriptRoot '..\src\*\*.config'
 $appSettingsPath
-#$xml = [xml](Get-Content $appSettingsPath)
-#$node=$xml.appSettings.add | where {$_.key -eq "GitHubAPIToken"}
-#$node.value =$env:GitHubAPIKey
-#$xml.Save($appSettingsPath);
 dir $appSettingsPath -recurse | foreach-object{  
    $wc = [xml](Get-Content $_.fullname)
    $wc.SelectNodes("//add[@key='GitHubAPIToken']") | Foreach-Object {$_.value = $env:GitHubAPIKey}
