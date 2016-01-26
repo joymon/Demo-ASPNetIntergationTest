@@ -26,5 +26,16 @@ namespace JoymonOnline.IntegrationTests
                 Assert.IsTrue(actualSize > 1, "The expected size of {0} is > 1. But actual was {1}", "/App_Themes/Black/Default.css",actualSize);
             }
         }
+        [TestMethod]
+        public void WhenGoogleAnalyticsJSFileIsRequested_ShouldReturn200AndContent()
+        {
+            using (var browser = new Browser())
+            {
+                var pathToGoogleAnalyticsCollector = "/JS/GA.js";
+                var result = browser.Get(pathToGoogleAnalyticsCollector);
+                var actualSize = result.ResponseText.Length;
+                Assert.IsTrue(actualSize > 1, "The expected size of {0} is > 1. But actual was {1}", pathToGoogleAnalyticsCollector, actualSize);
+            }
+        }
     }
 }
