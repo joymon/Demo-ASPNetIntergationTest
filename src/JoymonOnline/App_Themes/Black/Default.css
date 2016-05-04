@@ -87,6 +87,7 @@ h2 {
     top: 45px;
     font-size: 11px;
     letter-spacing: 3px;
+    margin-bottom:5px;
 }
 
 .menua {
@@ -96,7 +97,15 @@ h2 {
     text-transform: uppercase;
     font-size: 10px;
 }
+.menub {
+    margin: 8px auto 2px auto;
+    text-transform: uppercase;
+    font-size: 10px;
+}
 
+    .menub a:visited {
+        color: #DBB94F;
+    }
 .nav {
     position: absolute;
     right: 37px;
@@ -277,15 +286,7 @@ dd {
     color: #ffffff;
 }
 
-.menub {
-    margin: 8px auto 2px auto;
-    text-transform: uppercase;
-    font-size: 10px;
-}
 
-    .menub a:visited {
-        color: #DBB94F;
-    }
 
 /* Inline styles are used because image controls hard code a border property */
 
@@ -316,6 +317,14 @@ dd {
         max-width: 789px;
         height: 76px;
         margin: 0 auto 5px auto;
+    }
+    .menua i{
+        font-size:2em;
+        display:none;
+    } 
+    .menub i{
+        font-size:2em;
+        display:none;
     }
 }
 

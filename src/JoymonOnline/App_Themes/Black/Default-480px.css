@@ -13,8 +13,9 @@
         background-size: cover;
         position: relative;
         width: auto;
-        height: 76px;
+        height: auto;
         margin: 0 auto 5px auto;
+        padding-bottom:10px
     }
 
     h1 {
@@ -31,8 +32,9 @@
     }
 
     .menua {
-        position: relative;
-        right: 0px;
+        position: static;
+        right:auto ;
+        float:none;
     }
 
     .nav {
@@ -43,5 +45,15 @@
     }
     #resume #photo{
         position: static;
+    }
+    .menua i{
+        font-size:2em;
+        display:block;
+        margin-left:.7em;
+        margin-right:.7em;
+        color:#CCCCCC;
+    }
+    .menuTitle{
+        
     }
 }

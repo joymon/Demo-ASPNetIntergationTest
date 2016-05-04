@@ -15,13 +15,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="JS/GA.js">
     </script>
+    <link href="Content/font-awesome.css" type="text/css" rel="Stylesheet" />
 </head>
 <body>
 
     <form id="form1" runat="server">
         <div class="header">
-            <h1>Joymon Online</h1>
-            <span class="logo">Know me more...</span>
+            <div>
+                <h1>Joymon Online</h1>
+                <span class="logo">Know me more...</span>
+            </div>
             <asp:Menu ID="menua" runat="server"
                 DataSourceID="SiteMapDataSource1"
                 CssClass="menua"
@@ -29,9 +32,9 @@
                 MaximumDynamicDisplayLevels="0"
                 SkipLinkText=""
                 StaticDisplayLevels="2" />
-            <div class="nav">
-                <asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" > " RenderCurrentNodeAsLink="true" />
-            </div>
+            <%--<div class="nav">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" -> "  RenderCurrentNodeAsLink="true" />
+            </div>--%>
         </div>
 
         <asp:ContentPlaceHolder ID="Main" runat="server" />
@@ -46,6 +49,7 @@
                     SkipLinkText=""
                     StaticDisplayLevels="2" />
                 Copyright &copy; 2016 Joy George K.
+           
             </div>
         </div>
 

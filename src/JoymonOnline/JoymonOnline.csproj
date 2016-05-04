@@ -91,6 +91,9 @@
   <ItemGroup>
     <Content Include="App_Themes\Black\Default-480px.css" />
     <Content Include="App_Themes\Black\Default-700px.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="JS\GA.js" />
     <Content Include="ViewResume.aspx" />
     <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
@@ -231,6 +234,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="configs\appSettings.config" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Properties\PublishProfiles\CreateDeployPackage.pubxml" />
     <None Include="Properties\PublishProfiles\joymononline.in - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\joymononline.pubxml" />
