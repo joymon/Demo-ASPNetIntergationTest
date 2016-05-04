@@ -29,4 +29,10 @@
         font-size: 10px;
         color: #ffffff;
     }
+    #resume h4, #links h4 {
+        position: static;
+    }
+    #resume #photo{
+        position: static;
+    }    
 }

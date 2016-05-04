@@ -24,15 +24,24 @@
         text-transform: uppercase;
         font-size: 18px;
     }
-    .logo{
-        position:static;
-        left:0px;
+
+    .logo {
+        position: static;
+        left: 0px;
     }
-    .menua{
-        position:relative;
-        right:0px;
+
+    .menua {
+        position: relative;
+        right: 0px;
     }
+
     .nav {
         display: none;
+    }
+    #resume h4, #links h4 {
+        position: static;
+    }
+    #resume #photo{
+        position: static;
     }
 }
