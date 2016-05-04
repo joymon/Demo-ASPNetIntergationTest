@@ -1,8 +1,38 @@
 ﻿@media screen and (max-width:480px) {
-    #coollinks{
-        display:none;
+    #coollinks {
+        display: none;
     }
-    #whatsnew{
-        width:auto;
+
+    #whatsnew {
+        width: auto;
+    }
+
+    .header {
+        background-image: url(images/footer.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: auto;
+        height: 76px;
+        margin: 0 auto 5px auto;
+    }
+
+    h1 {
+        position: static;
+        left: 0px;
+        top: 12px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .logo{
+        position:static;
+        left:0px;
+    }
+    .menua{
+        position:relative;
+        right:0px;
+    }
+    .nav {
+        display: none;
     }
 }

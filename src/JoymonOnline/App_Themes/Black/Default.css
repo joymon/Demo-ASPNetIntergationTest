@@ -326,7 +326,7 @@ dd {
         height: 76px;
         margin: 0 auto 5px auto;
     }
-    #home {
+    #home,#resume,#links {
         width: auto;
     }
     #content {
