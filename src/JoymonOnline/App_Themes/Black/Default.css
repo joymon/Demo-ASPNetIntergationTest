@@ -310,3 +310,22 @@ dd {
 {
 	border-collapse:separate;
 }
+
+@media screen and (max-width:980px){
+    .header {
+        background-image: url(Images/header.gif);
+        background-repeat: no-repeat;
+        position: relative;
+        width: 789px;
+        height: 76px;
+        margin: 0 auto 5px auto;
+    }
+}
+@media screen and (max-width:700px){
+    .header {
+        position: relative;
+        width: 700px;
+        height: 76px;
+        margin: 0 auto 5px auto;
+    }
+}
