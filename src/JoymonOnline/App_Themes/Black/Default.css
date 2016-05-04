@@ -319,35 +319,3 @@ dd {
     }
 }
 
-@media screen and (max-width:700px) {
-    .header {
-        position: relative;
-        width: auto;
-        height: 76px;
-        margin: 0 auto 5px auto;
-    }
-    #home,#resume,#links {
-        width: auto;
-    }
-    #content {
-        width: auto;
-        float: none;
-        margin-left: 0px;
-    }
-    #sidebar {
-        width: auto;
-        float: none;
-    }
-    .footer {
-        background-image: url(images/footer.gif);
-        background-repeat: no-repeat;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 20px;
-        width: auto;
-        height: 50px;
-        text-align: center;
-        font-size: 10px;
-        color: #ffffff;
-    }
-}
