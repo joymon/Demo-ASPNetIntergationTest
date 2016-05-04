@@ -1,0 +1,8 @@
+﻿@media screen and (max-width:480px) {
+    #coollinks{
+        display:none;
+    }
+    #whatsnew{
+        width:auto;
+    }
+}

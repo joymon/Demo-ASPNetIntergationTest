@@ -89,6 +89,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Black\Default-480px.css" />
     <Content Include="JS\GA.js" />
     <Content Include="ViewResume.aspx" />
     <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
