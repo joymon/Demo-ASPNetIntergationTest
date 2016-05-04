@@ -5,18 +5,22 @@
         height: 76px;
         margin: 0 auto 5px auto;
     }
-    #home,#resume,#links {
+
+    #home, #resume, #links {
         width: auto;
     }
+
     #content {
         width: auto;
         float: none;
         margin-left: 0px;
     }
+
     #sidebar {
         width: auto;
         float: none;
     }
+
     .footer {
         background-image: url(images/footer.gif);
         background-repeat: no-repeat;
@@ -29,10 +33,16 @@
         font-size: 10px;
         color: #ffffff;
     }
+
+    #coollinks {
+        display: none;
+    }
+
     #resume h4, #links h4 {
         position: static;
     }
-    #resume #photo{
+
+    #resume #photo {
         position: static;
-    }    
+    }
 }

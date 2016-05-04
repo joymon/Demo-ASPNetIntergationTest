@@ -167,13 +167,8 @@ h4 {
 }
 
 #whatsnew {
-    float: left;
     width: 250px;
     height: 100%;
-}
-
-#coollinks {
-    margin-left: 220px;
 }
 
 #resume h4, #links h4 {
@@ -309,16 +304,7 @@ dd {
     border-collapse: separate;
 }
 
-@media screen and (max-width:980px) {
-    .header {
-        background-image: url(Images/header.gif);
-        background-repeat: no-repeat;
-        position: relative;
-        max-width: 789px;
-        height: 76px;
-        margin: 0 auto 5px auto;
-    }
-    .menua i{
+.menua i{
         font-size:2em;
         display:none;
     } 
@@ -326,5 +312,3 @@ dd {
         font-size:2em;
         display:none;
     }
-}
-

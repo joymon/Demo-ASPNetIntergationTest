@@ -1,0 +1,11 @@
+﻿@media screen and (max-width:980px) {
+    .header {
+        background-image: url(Images/header.gif);
+        background-repeat: no-repeat;
+        position: relative;
+        max-width: 789px;
+        height: 76px;
+        margin: 0 auto 5px auto;
+    }
+    
+}

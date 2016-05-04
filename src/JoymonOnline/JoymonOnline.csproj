@@ -91,6 +91,7 @@
   <ItemGroup>
     <Content Include="App_Themes\Black\Default-480px.css" />
     <Content Include="App_Themes\Black\Default-700px.css" />
+    <Content Include="App_Themes\Black\Default-980px.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
