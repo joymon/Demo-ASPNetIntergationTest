@@ -23,8 +23,7 @@
 				<h4>Cool Links</h4>
 				<ul	class="link">
 					<li><a href="http://www.joyfulwpf.blogspot.com" target="_blank">My WPF blog</a></li>
-					<li><a href="http://www.silverlightedweb.blogspot.com" target="_blank">My Silverlight blog</a></li>
-					<li><a href="http://joymon.picasaweb.google.com" target="_blank">Photos in Picasa</a></li>
+					<li><a href="http://www.joymonscode.blogspot.com" target="_blank">Joymon v/s Code</a></li>
 				</ul>
 			</div>
 			<hr	/>
