@@ -6,7 +6,7 @@
 
     <div class="page" id="links">
         <div id="content">
-            <h3>About the Links</h3>
+            <h3>Blogs</h3>
             <p>This is my blogosphere.Here you can find few of my blogs with their latest posts.You may read all by clicking on the coresponding URL.</p>
             <div>
                 <h4><a href="http://joymonscode.blogspot.com/" target="_blank">Joymon v/s Code</a></h4>
