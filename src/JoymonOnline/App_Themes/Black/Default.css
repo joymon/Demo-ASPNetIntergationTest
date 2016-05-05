@@ -174,7 +174,7 @@ h4 {
     height: 100%;
 }
 
-#resume h4, #links h4 {
+#resume h4,#changeLog h4, #links h4 {
     margin-top: 0px;
     border-top: 1px solid #505050;
     padding-top: 1.0em;
@@ -182,7 +182,6 @@ h4 {
     left: 37px;
     width: 214px;
 }
-
 #resume #photo {
     position: absolute;
     left: 37px;
