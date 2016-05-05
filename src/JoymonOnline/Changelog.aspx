@@ -12,6 +12,10 @@
             <p>Here I write the history and evolution of my web site. It helps me look at my past and analyze how far I improved my site.</p>
             <h4>V5</h4>
             <dl>
+                <dt>5MayOct2016</dt>
+                <dd>Made the site responsive without bootstrap.</dd>
+            </dl>
+            <dl>
                 <dt>29Oct2015</dt>
                 <dd>Moved source to Github and setup continuous integration and delivery. Used AppVeyor for CI & CD </dd>
             </dl>
