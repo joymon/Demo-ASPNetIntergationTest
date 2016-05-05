@@ -6,7 +6,7 @@
         margin: 0 auto 5px auto;
     }
 
-    #home, #resume, #links {
+    #home, #resume, #links,#changeLog {
         width: auto;
     }
 
@@ -44,5 +44,16 @@
 
     #resume #photo {
         position: static;
+    }
+    dd {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+    #links dt{
+        position:static
+    }
+    #links dd {
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 }

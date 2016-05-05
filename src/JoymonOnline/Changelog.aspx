@@ -5,7 +5,7 @@
 
     <div class="shim column"></div>
 
-    <div class="page" id="links">
+    <div class="page" id="changeLog">
         <div id="content">
             <h3>Version <%= JoymonOnline.VersionProvider.Version.Value %></h3>
             <h3>Changelog</h3>

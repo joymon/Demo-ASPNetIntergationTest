@@ -8,14 +8,14 @@
     }
 
     .header {
-        background-image: url(images/footer.gif);
+        background-image: url(images/footer.gif) !important;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         width: auto;
-        height: auto;
+        height: auto !important;
         margin: 0 auto 5px auto;
-        padding-bottom:10px
+        padding-bottom: 10px;
     }
 
     h1 {
@@ -33,27 +33,35 @@
 
     .menua {
         position: static;
-        right:auto ;
-        float:none;
+        right: auto;
+        float: none;
     }
 
     .nav {
         display: none;
     }
+
     #resume h4, #links h4 {
         position: static;
     }
-    #resume #photo{
+
+    #resume #photo {
         position: static;
     }
-    .menua i{
-        font-size:2em;
-        display:block;
-        margin-left:.7em;
-        margin-right:.7em;
-        color:#CCCCCC;
+
+    .menua i {
+        font-size: 2em;
+        display: block;
+        margin-left: .7em;
+        margin-right: .7em;
+        color: #CCCCCC;
     }
-    .menuTitle{
-        
+
+    .menuTitle {
+    }
+
+    dd {
+        margin-left: 80px;
+        margin-bottom: 10px;
     }
 }
