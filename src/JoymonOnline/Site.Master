@@ -32,9 +32,13 @@
                 MaximumDynamicDisplayLevels="0"
                 SkipLinkText=""
                 StaticDisplayLevels="2" />
-            <%--<div class="nav">
-                <asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" -> "  RenderCurrentNodeAsLink="true" />
-            </div>--%>
+            <div class="nav">
+                <%--<asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" -> "  RenderCurrentNodeAsLink="true" />--%>
+                <a href="https://plus.google.com/+JoyGeorgek"><i class="fa fa-google-plus"></i></a>
+                <a href="https://twitter.com/joymon"><i class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com/joygeorgek"><i class="fa fa-facebook"></i></a>
+            </div>
+            
         </div>
 
         <asp:ContentPlaceHolder ID="Main" runat="server" />
