@@ -21,7 +21,7 @@
                 <a href="<%# Eval("Url") %>"><%# Eval("Url") %></a>
                         <br />
                         <asp:Label runat="server" 
-                            Visible="<%# GetVisibilityFromSourceUrl(Container.DataItem) %>">Source code</asp:Label> <a href="<%# Eval("SourceUrl") %>"><%# Eval("SourceUrl") %></a>
+                            Visible="<%# GetVisibilityFromSourceUrl(Container.DataItem) %>">Source code <a href="<%# Eval("SourceUrl") %>"><%# Eval("SourceUrl") %></a></asp:Label> 
                     </p>
                 </ItemTemplate>
             </asp:Repeater>
