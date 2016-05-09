@@ -23,7 +23,7 @@
             <dl>
                 <dt><a href="http://www.new.facebook.com/profile.php?id=832130326" target="_blank">Facebook</a></dt>
                 <dd>Facebook.</dd>
-                <dt><a href="http://www.linkedin.com/pub/6/589/203" target="_blank">LinkedIn</a></dt>
+                <dt><a href="https://www.linkedin.com/in/joymon" target="_blank">LinkedIn</a></dt>
                 <dd>LinkedIn.</dd>
             </dl>
             <h4>Technology profiles</h4>
