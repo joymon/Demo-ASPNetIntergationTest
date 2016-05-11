@@ -71,7 +71,7 @@
                 <h4>Experience</h4>
                 <p class="first">
                     <b><a href="http://www.orioninc.com" target="_blank">Orion Inc</a></b> 2009 Jul
-                    - Till Date as Technical Architect.<br />
+                    - Till Date as Application Architect.<br />
                 </p>
                 <p>
                     Orion is a company which provides IT solutions to Fortune 500 clients across the
