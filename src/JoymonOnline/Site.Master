@@ -18,8 +18,6 @@
     <link href="Content/font-awesome.css" type="text/css" rel="Stylesheet" />
 </head>
 <body>
-
-    <form id="form1" runat="server">
         <div class="header">
             <div>
                 <h1>Joymon Online</h1>
@@ -44,7 +42,6 @@
         </div>
 
         <asp:ContentPlaceHolder ID="Main" runat="server" />
-
         <div class="footerbg">
             <div class="footer">
                 <div class="menub">
@@ -59,10 +56,6 @@
                 </span>
             </div>
         </div>
-
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" StartingNodeOffset="0" ShowStartingNode="false" />
-
-    </form>
-
 </body>
 </html>
