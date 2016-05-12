@@ -17,7 +17,7 @@ namespace JoymonOnline
                 Rss20FeedFormatter feedFormatter = new Rss20FeedFormatter();
                 feedFormatter.ReadFrom(reader);
                 feedFormatter.PreserveElementExtensions = false;
-                return feedFormatter.Feed.Items.Take(4);
+                return feedFormatter.Feed.Items.Take(3);
             }
         }
     }
