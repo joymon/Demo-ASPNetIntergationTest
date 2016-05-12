@@ -1,6 +1,6 @@
 ﻿<%@ Import Namespace="JoymonOnline" %>
 <%@	Page Language="C#" MasterPageFile="~/site.master" Title="Joymon Online | Home" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="JoymonOnline.Default" %>
-
+<%@ OutputCache CacheProfile="Cache30Seconds" %>
 <asp:content id="Content1" contentplaceholderid="Main" runat="server">
 
 	<div class="shim column"></div>
