@@ -87,7 +87,7 @@ h2 {
     top: 45px;
     font-size: 11px;
     letter-spacing: 3px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 .menua {
@@ -97,15 +97,19 @@ h2 {
     text-transform: uppercase;
     font-size: 10px;
 }
+
 .menub {
     margin: 8px auto 2px auto;
     text-transform: uppercase;
     font-size: 10px;
+    float:left;
+    position:relative;
 }
 
     .menub a:visited {
         color: #DBB94F;
     }
+
 .nav {
     position: absolute;
     right: 15px;
@@ -113,10 +117,12 @@ h2 {
     text-transform: uppercase;
     font-size: 1em;
 }
-.nav i{
-    font-size: 1.4em;
-    margin-left:1em;
-}
+
+    .nav i {
+        font-size: 1.4em;
+        margin-left: 1em;
+    }
+
     .menua a:visited, .nav a:visited {
         color: #DBB94F;
     }
@@ -174,7 +180,7 @@ h4 {
     height: 100%;
 }
 
-#resume h4,#changeLog h4, #links h4 {
+#resume h4, #changeLog h4, #links h4 {
     margin-top: 0px;
     border-top: 1px solid #505050;
     padding-top: 1.0em;
@@ -182,6 +188,7 @@ h4 {
     left: 37px;
     width: 214px;
 }
+
 #resume #photo {
     position: absolute;
     left: 37px;
@@ -218,7 +225,7 @@ dt {
 
 dd {
     margin-left: 150px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .emptydata td {
@@ -277,13 +284,10 @@ dd {
     margin-right: auto;
     padding-bottom: 20px;
     width: 770px;
-    height: 50px;
     text-align: center;
     font-size: 10px;
     color: #ffffff;
 }
-
-
 
 /* Inline styles are used because image controls hard code a border property */
 
@@ -306,11 +310,19 @@ dd {
     border-collapse: separate;
 }
 
-.menua i{
-        font-size:2em;
-        display:none;
-    } 
-    .menub i{
-        font-size:2em;
-        display:none;
-    }
+.menua i {
+    font-size: 2em;
+    display: none;
+}
+
+.menub i {
+    font-size: 2em;
+    display: none;
+}
+
+.menuItem {
+    position: relative;
+    float: left;
+    padding-left: 0.15em;
+    padding-right: 0.15em;
+}

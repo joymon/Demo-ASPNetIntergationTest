@@ -25,13 +25,13 @@
                 <h1>Joymon Online</h1>
                 <span class="logo">Know me more...</span>
             </div>
-            <asp:Menu ID="menua" runat="server"
-                DataSourceID="SiteMapDataSource1"
-                CssClass="menua"
-                Orientation="Horizontal"
-                MaximumDynamicDisplayLevels="0"
-                SkipLinkText=""
-                StaticDisplayLevels="2" />
+            <div class="menua">
+                <asp:Repeater runat="server" DataSourceID="SiteMapDataSource1">
+                    <ItemTemplate>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menuItem" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("Title") %>' />
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
             <div class="nav">
                 <%--<asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" -> "  RenderCurrentNodeAsLink="true" />--%>
                 <a href="https://plus.google.com/+JoyGeorgek"><i class="fa fa-google-plus"></i></a>
@@ -40,26 +40,27 @@
                 <a href="https://www.linkedin.com/in/joymon"><i class="fa fa-linkedin"></i></a>
                 <a href="https://www.github.com/joymon"><i class="fa fa-github"></i></a>
             </div>
-            
+
         </div>
 
         <asp:ContentPlaceHolder ID="Main" runat="server" />
 
         <div class="footerbg">
             <div class="footer">
-                <asp:Menu ID="menub" runat="server"
-                    DataSourceID="SiteMapDataSource1"
-                    CssClass="menub"
-                    Orientation="Horizontal"
-                    MaximumDynamicDisplayLevels="0"
-                    SkipLinkText=""
-                    StaticDisplayLevels="2" />
-                Copyright &copy; 2016 Joy George K.
-           
+                <div class="menub">
+                    <asp:Repeater runat="server" DataSourceID="SiteMapDataSource1">
+                        <ItemTemplate>
+                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menuItem" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("Title") %>' />
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div> <br /><br />
+                <span>
+                    Copyright &copy; 2016 Joy George K.
+                </span>
             </div>
         </div>
 
-        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" StartingNodeOffset="0" />
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" StartingNodeOffset="0" ShowStartingNode="false" />
 
     </form>
 

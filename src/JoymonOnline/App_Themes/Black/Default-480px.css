@@ -16,6 +16,7 @@
         height: auto !important;
         margin: 0 auto 5px auto;
         padding-bottom: 10px;
+        overflow:hidden;
     }
 
     h1 {
@@ -34,7 +35,7 @@
     .menua {
         position: static;
         right: auto;
-        float: none;
+        float: left;
     }
 
     .nav {
