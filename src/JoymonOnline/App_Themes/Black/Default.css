@@ -81,6 +81,17 @@ h2 {
     font-size: 11px;
 }
 
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
 .logo {
     position: absolute;
     left: 37px;
