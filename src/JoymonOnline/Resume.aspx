@@ -62,10 +62,9 @@
                 <h4>Profile</h4>
                 <p class="first">
                     A passionate software engineer willing to develop systems to solve problems regardless
-                    of technology & tools. 10+ Years in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Azure
-                    and Silverlight. Along with Microsoft technologies, also have experience in web technologies & libraries such as HTML, Javascript, CSS, jQuery, Bootstrap, Angular JS etc...
-                    </br/>
-                    Interested in community activities to learn from and teach other software engineers. Frequently posts in <a href="Blogs.aspx"> blogs</a>,answers technical forums.
+                    of technology &amp; tools. 10+ Years in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Azure
+                    and Silverlight. Along with Microsoft technologies, also have experience in web technologies &amp; libraries such as HTML, Javascript, CSS, jQuery, Bootstrap, Angular JS etc...
+                    <br/>Interested in community activities to learn from and teach other software engineers. Frequently posts in <a href="Blogs.aspx"> blogs</a>,answers technical forums.
                 </p>
             </div>
             <div>
@@ -130,7 +129,7 @@
                     This is the development tool for business design group of Orion Inc’s reputed client
                     working in the auditing domain, who defines algorithms for finding out risks on
                     an audit engagement and suggest the testing methodology to mitigate the same. The
-                    business design group can develop & test routines on their machines. They can also
+                    business design group can develop &amp; test routines on their machines. They can also
                     modify meta-data for routines to fine tune the flow.
                     <br />
                     The technology used is Windows Workflow Foundation which provides out of the box
