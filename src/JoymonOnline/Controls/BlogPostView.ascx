@@ -15,6 +15,7 @@
         <tr>
             <td colspan="2">
                 <asp:label id="Label3" runat="server" text='<%# TrimSubject(Eval("Summary.Text").ToString())  %>'></asp:label>
+                </td>
         </tr>
     </table>
 </div>
