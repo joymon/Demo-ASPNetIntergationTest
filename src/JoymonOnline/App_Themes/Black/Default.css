@@ -337,3 +337,8 @@ dd {
     padding-left: 0.15em;
     padding-right: 0.15em;
 }
+.blogItem .postedDate {
+    width:30%;
+    text-align:right;
+    vertical-align:top;
+}
