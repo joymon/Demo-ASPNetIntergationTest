@@ -18,7 +18,7 @@
 
     #sidebar {
         width: auto;
-        float: none;
+        float: none
     }
 
     .footer {
@@ -38,7 +38,7 @@
         display: none;
     }
 
-    #resume h4, #links h4 {
+    #resume h4, #links h4, #changeLog h4 {
         position: static;
     }
 
