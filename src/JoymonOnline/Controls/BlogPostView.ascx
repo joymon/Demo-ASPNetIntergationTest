@@ -1,7 +1,7 @@
 ﻿<%@  Control Language="C#" AutoEventWireup="true"
     CodeBehind="BlogPostView.ascx.cs" Inherits="JoymonOnline.Controls.BlogPostView" %>
 <div class="blogItem">
-    <table>
+    <table role="presentation">
         <tr>
             <td>
                 <asp:hyperlink id="HyperLink1" runat="server" target="_blank" navigateurl='<%#Eval("Links[0].Uri") %>'>
