@@ -99,7 +99,7 @@
     <Content Include="ViewResume.aspx" />
     <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
     <Content Include="Projects.aspx" />
-    <Content Include="Entities\ChangePasswordSuccess.aspx" />
+    <Content Include="Controls\BlogPostView.ascx" />
     <Content Include="Entities\Login.aspx" />
     <Content Include="Changelog.aspx" />
     <Content Include="App_Themes\Black\Default.css" />
@@ -144,12 +144,12 @@
     <Compile Include="Projects.aspx.designer.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\ChangePasswordSuccess.aspx.cs">
-      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    <Compile Include="Controls\BlogPostView.ascx.cs">
+      <DependentUpon>BlogPostView.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Entities\ChangePasswordSuccess.aspx.designer.cs">
-      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    <Compile Include="Controls\BlogPostView.ascx.designer.cs">
+      <DependentUpon>BlogPostView.ascx</DependentUpon>
     </Compile>
     <Compile Include="Entities\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

@@ -8,18 +8,5 @@ namespace JoymonOnline
         {
 
         }
-        public string TrimSubject(string subject)
-        {
-            string plainText = HtmlTagsRemover.Remove(subject);
-            string retVal = plainText;// HttpUtility.HtmlEncode(subject.Trim());
-            if (retVal.Length > 150)
-            {
-                retVal = retVal.Substring(0, 150) + "...";
-            }
-            return retVal;
-        }
-
-
-
     }
 }
