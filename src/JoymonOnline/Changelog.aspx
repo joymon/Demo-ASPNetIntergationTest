@@ -12,11 +12,11 @@
             <p>Here I write the history and evolution of my web site. It helps me look at my past and analyze how far I improved my site.</p>
             <h4>V5</h4>
             <dl>
-                <dt>9MayOct2016</dt>
+                <dt>9May2016</dt>
                 <dd>Started using FontAwesome library for icons.</dd>
             </dl>
             <dl>
-                <dt>5MayOct2016</dt>
+                <dt>5May2016</dt>
                 <dd>Made the site responsive without bootstrap.</dd>
             </dl>
             <dl>
