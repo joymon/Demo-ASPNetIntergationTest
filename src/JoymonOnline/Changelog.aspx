@@ -21,7 +21,7 @@
             </dl>
             <dl>
                 <dt>29Oct2015</dt>
-                <dd>Moved source to Github and setup continuous integration and delivery. Used AppVeyor for CI & CD </dd>
+                <dd>Moved source to Github and setup continuous integration and delivery. Used AppVeyor for CI and CD </dd>
             </dl>
             <h4>V4</h4>
             <dl>
