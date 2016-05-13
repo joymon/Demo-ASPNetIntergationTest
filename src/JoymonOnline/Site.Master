@@ -52,7 +52,7 @@
                     </asp:Repeater>
                 </div> <br /><br />
                 <span>
-                    Copyright &copy; 2016 Joy George K.
+                    Copyright &copy; <%=DateTime.Now.Year %> Joy George K.
                 </span>
             </div>
         </div>
