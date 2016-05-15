@@ -20,8 +20,8 @@
 		</div>
 		<div id="content">
 			<h3>Welcome	to JoymonOnline</h3>
-			<p>Hi I am Joy.Here you can find details to know me more.It includes my personal details,education details and professional details.	</p>
-			<hr	/>
+			<p>Hi I am Joy. Here you can find details to know me more. It includes my personal details, education details and professional details.	</p>
+			<hr/>
 			<div id="whatsnew">
 				<h4>What's New</h4>
                 <%=DataProviderFactory.GetWhatsNewDataProvider().GetData() %>
