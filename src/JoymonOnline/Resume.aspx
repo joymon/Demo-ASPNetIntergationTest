@@ -86,7 +86,7 @@
                 <p>
                     Identitymine is specialized in user experience using new Microsoft technologies
                     such as WPF,Silverlight and Suface. It is a Gold certified partner of Microsoft.
-                    Blendables is it's esteem product which consists of WPF components
+                    Blendables is it's esteem product which consists of WPF components.
                 </p>
                 <p>
                     <b><a href="http://www.syncfusion.com" target="_blank">Syncfusion</a></b> 2005 Nov
@@ -101,7 +101,7 @@
             <div>
                 <h4>Projects</h4>
                 <p class="first">
-                    <b><a href="http://orioninc.com">Audit Platform , Orion Systems , 2014 Oct - Till Date</a>
+                    <b><a href="http://orioninc.com">Audit Platform , Orion Systems , 2014 Oct - 2015 Oct</a>
                     </b>
                     <br />
                     .Net 4.0, WCF, C#, and ASP.Net MVC 4.0
