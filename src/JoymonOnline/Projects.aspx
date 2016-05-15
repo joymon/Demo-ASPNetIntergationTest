@@ -16,7 +16,7 @@
                     <h4><%# Eval("Name") %></h4>
                     <p class="first">
                         <%# Eval("Description") %>
-                        <br />
+                        <br /><br />
                         Application url
                 <a href="<%# Eval("Url") %>"><%# Eval("Url") %></a>
                         <br />
