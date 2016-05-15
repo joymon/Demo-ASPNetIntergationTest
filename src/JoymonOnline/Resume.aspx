@@ -64,7 +64,7 @@
                     A passionate software engineer willing to develop systems to solve problems regardless
                     of technology &amp; tools. 10+ Years in .Net technologies such as WPF, WCF, ASP.Net MVC, Linq, Azure
                     and Silverlight. Along with Microsoft technologies, also have experience in web technologies &amp; libraries such as HTML, Javascript, CSS, jQuery, Bootstrap, Angular JS etc...
-                    <br/>Interested in community activities to learn from and teach other software engineers. Frequently posts in <a href="Blogs.aspx"> blogs</a>,answers technical forums.
+                    <br/>Interested in community activities to learn from and teach other software engineers. Frequently posts in <a href="Blogs.aspx"> blogs</a>, answers technical forums.
                 </p>
             </div>
             <div>
@@ -75,9 +75,9 @@
                 </p>
                 <p>
                     Orion is a company which provides IT solutions to Fortune 500 clients across the
-                    globe and manages its own products.Specialized areas include mobile,content management,ERP
-                    and telecom.The main product in mobile technology is <a href="http://moofwd.com">moofwd</a>
-                    which helps to create cross device applications
+                    globe and manages its own products. Specialized areas include mobile,content management,ERP
+                    and telecom. The main product in mobile technology is <a href="http://moofwd.com">moofwd</a>
+                    which helps to create cross device applications.
                 </p>
                 <p class="first">
                     <b><a href="http://www.identitymine.com" target="_blank">Identitymine</a></b> 2007
