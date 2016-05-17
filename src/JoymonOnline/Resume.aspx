@@ -93,7 +93,7 @@
                     - 2007 Apr as Software Engineer Level 4
                 </p>
                 <p>
-                    Syncfusion is a world leading company in the software components market Software
+                    Syncfusion is a world leading company in the software components market. Software
                     components of Syncfusion ranges from .Net windows forms to .net 3.5 WPF and RIA
                     platform Silverlight.
                 </p>
@@ -117,7 +117,7 @@
                     The platform publishes APIs other audit applications to interact with platform as
                     well as to each other. The APIs are backed by WCF services. A Management Console
                     built using ASP.Net MVC acts as console for managing the audit platform. I am working
-                    in this project as Technical Architect
+                    in this project as Application Architect
                 </p>
                 <p class="first">
                     <b><a href="http://orioninc.com">Audit Scoring Engine , Orion Systems , 2014 May - 2014
