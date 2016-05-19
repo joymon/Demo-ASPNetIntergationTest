@@ -50,7 +50,7 @@
             <p>
                 661-750-9787<br />
                 <a href="mailto:joymon@gmail.com">joymon@gmail.com</a><br />
-                www.joymononline.in<br />
+                <a href="http://www.joymononline.in">www.joymononline.in</a><br />
                 Wayne, New Jersey, US
             </p>
             <p>
