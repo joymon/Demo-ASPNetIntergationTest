@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Joymon Online | Projects" Language="C#" EnableViewState="false"
     MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Projects.aspx.cs" Inherits="JoymonOnline.Projects" %>
+
 <%@ OutputCache CacheProfile="Cache1Week" %>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="Main">
     <div class="shim column"></div>
@@ -10,18 +11,21 @@
             <h3>Applications</h3>
             <p>
                 Below are my personal projects which are available to public use.
+           
             </p>
             <asp:Repeater ID="ProjectsRepeater" runat="server" DataSourceID="ProjectsObjectDataSource">
                 <ItemTemplate>
                     <h4><%# Eval("Name") %></h4>
                     <p class="first">
                         <%# Eval("Description") %>
-                        <br /><br />
-                        Application url
-                <a href="<%# Eval("Url") %>"><%# Eval("Url") %></a>
                         <br />
-                        <asp:Label runat="server" 
-                            Visible="<%# GetVisibilityFromSourceUrl(Container.DataItem) %>">Source code <a href="<%# Eval("SourceUrl") %>"><%# Eval("SourceUrl") %></a></asp:Label> 
+                        <br />
+                        Application url
+               
+                        <a href="<%# Eval("Url") %>"><%# Eval("Url") %></a>
+                        <br />
+                        <asp:Label runat="server"
+                            Visible="<%# GetVisibilityFromSourceUrl(Container.DataItem) %>">Source code <a href="<%# Eval("SourceUrl") %>"><%# Eval("SourceUrl") %></a></asp:Label>
                     </p>
                 </ItemTemplate>
             </asp:Repeater>

@@ -11,7 +11,7 @@
     <meta name="author" content="Joy George K" />
     <meta name="author" content="Joymon" />
     <meta name="contact" content="joymon@gmail.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="JS/GA.js">
     </script>
@@ -31,7 +31,6 @@
                 </asp:Repeater>
             </div>
             <div class="nav">
-                <%--<asp:SiteMapPath ID="SiteMapPath1" runat="Server" PathSeparator=" -> "  RenderCurrentNodeAsLink="true" />--%>
                 <a href="https://twitter.com/joymon"><i class="fa fa-twitter"></i></a>
                 <a href="https://facebook.com/joygeorgek"><i class="fa fa-facebook"></i></a>
                 <a href="https://plus.google.com/+JoyGeorgek"><i class="fa fa-google-plus"></i></a>
@@ -39,7 +38,6 @@
                 <a href="https://www.github.com/joymon"><i class="fa fa-github"></i></a>
                 <a href="http://www.youtube.com/user/joygeorgek"><i class="fa fa-youtube"></i></a>
             </div>
-
         </div>
 
         <asp:ContentPlaceHolder ID="Main" runat="server" />
