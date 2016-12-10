@@ -17,6 +17,12 @@ module JoymonOnline {
         }
         registerController(name: string, controllerConstructor: ng.IController): void {
             this.app.controller(name, () => controllerConstructor);
+            var f: Function;
+        }
+        registerDirective(name: string,directiveFactory:ng.IDirectiveFactory): void {
+            //this.app.directive(name, );
+            console.log("reg dir " + name);
+            this.app.directive(name, directiveFactory);
         }
     }
     var hrApp: AppModule = new AppModule();

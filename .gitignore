@@ -23,3 +23,5 @@
 /src/JoymonOnline.Tests
 /src/packages
 /src/JoymonOnline/JoymonOnline.csproj.user
+/src/JoymonOnline/JS/app/BlogFeed.js.map
+/src/JoymonOnline/JS/app/BlogFeed.js

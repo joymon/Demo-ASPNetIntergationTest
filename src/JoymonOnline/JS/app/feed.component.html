@@ -1,8 +1,32 @@
-<h1>Feed - UI {{name}}</h1>
-Entries {{entries.length}}
+<div>
+    <h4><a href="http://joymonscode.blogspot.com/" target="_blank">Joymon v/s Code</a></h4>
+    <div class="blogItems">
+        <div class="blogItem" ng-repeat="feed in ctrl.Feed.Posts">
+            <table role="presentation">
+                <tr>
+                    <td>
+                        <a id="HyperLink1" runat="server" target="_blank" ng-href="feed.Url" href='<%#Eval("Links[0].Uri") %>'>
+                            {{feed.Title}}
+                        </a>
+                    </td>
+                    <td class="postedDate">
+                        {{feed.PublishDate}}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        {{feed.Content}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+    Entries {{ctrl.Feed.Posts.length}}
 <div ng-repeat="feed in Feeds">
-  <h3>{{feed.title}}</h3>
-  <h4>{{feed.publishedDate}}</h4>
-  <div>{{feed.contentSnippet}}</div> 
-  <div>{{feed.link}}</div>
-</div> 
+    <h3>{{feed.title}}</h3>
+    <h4>{{feed.publishedDate}}</h4>
+    <div>{{feed.contentSnippet}}</div>
+    <div>{{feed.link}}</div>
+</div>

@@ -5,6 +5,9 @@
 <%@ Register TagPrefix="ctrls" TagName="BlogPostView"
     Src="~/Controls/BlogPostView.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="Server">
+    <script src="Scripts/angular.js" type="text/javascript" ></script>
+    <script src="JS/app/app.js" type="text/javascript" ></script>
+    <script src="JS/app/feed.component.js" type="text/javascript" ></script>
 
     <div class="shim column"></div>
 
@@ -12,7 +15,9 @@
         <div id="content">
             <h3>Blogs</h3>
             <p>This is my blogosphere.Here you can find few of my blogs with their latest posts.You may read all by clicking on the coresponding URL.</p>
-            <div>
+          
+          <%--  <blog-feed rss="http://feeds2.feedburner.com/Joyfulwpf"></blog-feed>
+          --%>    <div>
                 <h4><a href="http://joymonscode.blogspot.com/" target="_blank">Joymon v/s Code</a></h4>
                 <div class="blogItems">
                     <asp:Repeater runat="server" DataSourceID="JoymonsCodeObjectDataSource">
@@ -44,6 +49,7 @@
             </div>
         </div>
     </div>
+    
     <asp:ObjectDataSource ID="JoyfulWPFObjectDataSource" runat="server"
         SelectMethod="GetPosts" TypeName="Joymononline.BlogDataProvider">
         <SelectParameters>

@@ -1035,6 +1035,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
     <TypeScriptCompile Include="JS\app\project.component.ts" />
     <TypeScriptCompile Include="JS\app\GithubProject.ts" />
     <TypeScriptCompile Include="JS\app\app.ts" />
