@@ -3,3 +3,23 @@
 ################################################################################
 
 /src/.vs
+/src/JoymonOnline/app/app.component.js
+/src/JoymonOnline/app/app.js
+/src/JoymonOnline/app/app.module.js
+/src/JoymonOnline/app/feed.component.js
+/src/JoymonOnline/app/feed.service.js
+/src/JoymonOnline/bin
+/src/JoymonOnline/obj/Debug
+/src/JoymonOnline/JS/app/feed.service.js
+/src/JoymonOnline/JS/app/feed.component.js.map
+/src/JoymonOnline/JS/app/feed.component.js
+/src/JoymonOnline/JS/app/app.module.js.map
+/src/JoymonOnline/JS/app/app.module.js
+/src/JoymonOnline/JS/app/app.js.map
+/src/JoymonOnline/JS/app/app.js
+/src/JoymonOnline/JS/app/app.component.js.map
+/src/JoymonOnline/JS/app/app.component.js
+/src/JoymonOnline.IntegrationTests
+/src/JoymonOnline.Tests
+/src/packages
+/src/JoymonOnline/JoymonOnline.csproj.user

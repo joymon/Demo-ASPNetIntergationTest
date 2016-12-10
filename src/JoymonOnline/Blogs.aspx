@@ -5,9 +5,10 @@
 <%@ Register TagPrefix="ctrls" TagName="BlogPostView"
     Src="~/Controls/BlogPostView.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="Server">
+
     <div class="shim column"></div>
 
-    <div class="page" id="links">
+    <div ng-app="JoymonOnline" class="page" id="links">
         <div id="content">
             <h3>Blogs</h3>
             <p>This is my blogosphere.Here you can find few of my blogs with their latest posts.You may read all by clicking on the coresponding URL.</p>

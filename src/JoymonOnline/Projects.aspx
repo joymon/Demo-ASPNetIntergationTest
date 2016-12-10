@@ -5,8 +5,9 @@
 <%@ OutputCache CacheProfile="Cache1Week" %>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="Main">
     <div class="shim column"></div>
-
-    <div class="page" id="resume">
+    
+    <div ng-app="JoymonOnline" class="page" id="resume">
+        
         <div id="content">
             <h3>Applications</h3>
             <p>
@@ -33,4 +34,6 @@
     </div>
 
     <asp:ObjectDataSource ID="ProjectsObjectDataSource" runat="server" SelectMethod="GetProjects" TypeName="JoymonOnline.ProjectsDataProvider"></asp:ObjectDataSource>
+    <script src="Scripts/angular.js" type="text/javascript" ></script>
+    <script src="JS/app/app.js" type="text/javascript" ></script>
 </asp:Content>
