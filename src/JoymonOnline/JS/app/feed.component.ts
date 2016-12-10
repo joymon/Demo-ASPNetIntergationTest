@@ -1,0 +1,1 @@
+//Directive for individual Blog Feed

@@ -99,7 +99,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="JS\app\feed.component.html" />
     <Content Include="JS\GA.js" />
-    <Content Include="JS\systemjs.config.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -1036,10 +1035,11 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="JS\app\app.component.ts" />
-    <TypeScriptCompile Include="JS\app\app.module.ts" />
+    <TypeScriptCompile Include="JS\app\project.component.ts" />
+    <TypeScriptCompile Include="JS\app\GithubProject.ts" />
     <TypeScriptCompile Include="JS\app\app.ts" />
     <TypeScriptCompile Include="JS\app\feed.component.ts" />
+    <TypeScriptCompile Include="JS\app\feed.service.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
