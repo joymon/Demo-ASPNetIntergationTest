@@ -1,11 +1,14 @@
 ﻿namespace JoymonOnline {
+    export class BlogFeedResponse {
+        public feed: BlogFeed;
+    }
     export class BlogFeed {
-        public Posts: Array<BlogPostEntry>;
+        public entries: Array<BlogPostEntry>;
     }
     export class BlogPostEntry {
-        public Title:string ;
-        public Url: string;
-        public PublishDate: Date;
-        public Content: string;
+        public title:string ;
+        public link: string;
+        public publishedDate: Date;
+        public content: string;
     }
 }

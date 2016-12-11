@@ -97,6 +97,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="index.html" />
     <Content Include="JS\app\feed.component.html" />
     <Content Include="JS\GA.js" />
     <Content Include="Scripts\angular-animate.js" />

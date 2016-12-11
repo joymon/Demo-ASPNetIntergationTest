@@ -1,21 +1,21 @@
 <div>
     <h4><a href="http://joymonscode.blogspot.com/" target="_blank">Joymon v/s Code</a></h4>
     <div class="blogItems">
-        <div class="blogItem" ng-repeat="feed in ctrl.Feed.Posts">
+        <div class="blogItem" ng-repeat="feed in ctrl.Feed.entries">
             <table role="presentation">
                 <tr>
                     <td>
-                        <a id="HyperLink1" runat="server" target="_blank" ng-href="feed.Url" href='<%#Eval("Links[0].Uri") %>'>
-                            {{feed.Title}}
+                        <a id="HyperLink1" runat="server" target="_blank" ng-href="feed.link" href='<%#Eval("Links[0].Uri") %>'>
+                            {{feed.title}}
                         </a>
                     </td>
                     <td class="postedDate">
-                        {{feed.PublishDate}}
+                        {{feed.publishedDate | date :'dd MMM yy'}}
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        {{feed.Content}}
+                        {{feed.content | removeTags | limitTo:100}}
                     </td>
                 </tr>
             </table>
