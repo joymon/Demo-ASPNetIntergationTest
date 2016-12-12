@@ -1,32 +1,25 @@
 <div>
-    <h4><a href="http://joymonscode.blogspot.com/" target="_blank">Joymon v/s Code</a></h4>
+    <h4><a ng-href="{{ctrl.Feed.link}}" target="_blank">{{ctrl.Feed.title}}</a></h4>
     <div class="blogItems">
         <div class="blogItem" ng-repeat="feed in ctrl.Feed.entries">
             <table role="presentation">
                 <tr>
                     <td>
-                        <a id="HyperLink1" runat="server" target="_blank" ng-href="feed.link" href='<%#Eval("Links[0].Uri") %>'>
+                        <a id="HyperLink1" runat="server" target="_blank" ng-href="{{feed.link}}">
                             {{feed.title}}
                         </a>
                     </td>
                     <td class="postedDate">
-                        {{feed.publishedDate | date :'dd MMM yy'}}
+                        {{feed.publishedDate | toDate | date :'dd MMM yy'}}
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        {{feed.content | removeTags | limitTo:100}}
+                        {{feed.content | removeTags | limitTo:150}}{{feed.content.length > 150 ? '...' : ''}}
                     </td>
                 </tr>
             </table>
         </div>
 
     </div>
-</div>
-    Entries {{ctrl.Feed.Posts.length}}
-<div ng-repeat="feed in Feeds">
-    <h3>{{feed.title}}</h3>
-    <h4>{{feed.publishedDate}}</h4>
-    <div>{{feed.contentSnippet}}</div>
-    <div>{{feed.link}}</div>
 </div>

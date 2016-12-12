@@ -41,4 +41,11 @@ module JoymonOnline {
         } 
     }
     AppModule.getInstance().registerFilter("removeTags", HTMLTagRemover.filter);
+    export class ToDateFilter {
+        public static filter(): Function {
+            return (text: string): Date => { return new Date(text.replace(/-/g, "/")); };
+        }
+    }
+    AppModule.getInstance().registerFilter("toDate", ToDateFilter.filter);
+
 }

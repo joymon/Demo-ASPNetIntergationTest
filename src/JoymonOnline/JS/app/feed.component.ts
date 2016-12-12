@@ -8,12 +8,14 @@ namespace JoymonOnline {
         public controller: any;
         public controllerAs: string;
         public bindToController: boolean | { [boundProperty: string]: string };
+        public scope: boolean | { [boundProperty: string]: string };
         constructor() {
             this.restrict = 'E';
             this.templateUrl = 'JS/app/feed.component.html';
             this.controller = "BlogFeedController";
             this.controllerAs = "ctrl";
-            this.bindToController = {
+            this.bindToController = true;
+            this.scope = {
                 rss: '@'
             };
         }
@@ -25,20 +27,21 @@ namespace JoymonOnline {
     export class BlogFeedController implements ng.IController {
 
         //static $inject = ['DataService'];
-        constructor(dataServie: BlogDataService) {
+        constructor($scope:any,dataServie: BlogDataService) {
             console.log("BlogFeedController created");
             this.Url = "joymons world wpf";
             this.Feed = { entries: [] };
             //this.Feed.entries.push({ Title: "Test Title", publishDate: new Date(), content: "test content", link: 'test ur' });
             //this.Feed.entries.push({ Title: "Test Title2", publishDate: new Date(), content: "test content2", link: 'test url2' });
-            console.log("WhoAmI -" + dataServie.GetWhoAmI());
-            dataServie.GetPosts("http://feeds2.feedburner.com/Joyfulwpf")
+            //console.log("rss" + $scope.ctrl.rss);
+            dataServie.GetPosts($scope.ctrl.rss)
                 .then((value: ng.IHttpPromiseCallbackArg<BlogFeedResponse>) => {
                     console.log(value.data.feed);
                     this.Feed = value.data.feed;
                 })
                 .catch((err) => { console.log("Error" + err); });
         }
+        public rss: string;
         public Feed: BlogFeed;
         public Url: string;
         getUrl(): string {
@@ -46,6 +49,6 @@ namespace JoymonOnline {
         }
     }
 //    AppModule.getInstance().registerController("BlogFeedController", new BlogFeedController());
-    AppModule.getInstance().registerControllerWithFactory("BlogFeedController", (DataService: BlogDataService)=> new BlogFeedController(DataService));
+    AppModule.getInstance().registerControllerWithFactory("BlogFeedController", ($scope:any, DataService: BlogDataService)=> new BlogFeedController($scope,DataService));
 
 }
