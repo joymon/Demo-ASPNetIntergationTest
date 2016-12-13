@@ -97,7 +97,8 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="home.html" />
+    <Content Include="indexTest.html" />
+    <Content Include="JS\app\content.component.html" />
     <Content Include="JS\app\feed.component.html" />
     <Content Include="JS\GA.js" />
     <Content Include="Scripts\angular-animate.js" />
@@ -1037,6 +1038,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
+    <TypeScriptCompile Include="JS\app\content.component.ts" />
+    <TypeScriptCompile Include="JS\app\content.service.ts" />
     <TypeScriptCompile Include="JS\app\project.component.ts" />
     <TypeScriptCompile Include="JS\app\GithubProject.ts" />
     <TypeScriptCompile Include="JS\app\app.ts" />

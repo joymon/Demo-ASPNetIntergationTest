@@ -9,7 +9,7 @@ module JoymonOnline {
         }
         private app: ng.IModule;
         constructor() {
-            this.app = angular.module("JoymonOnline", []);
+            this.app = angular.module("JoymonOnline", ['ngSanitize']);
             AppModule.currentCountryModule = this;
         }
         registerService(name: string, serviceConstructor: Function): void {
