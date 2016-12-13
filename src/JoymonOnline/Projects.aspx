@@ -4,6 +4,12 @@
 
 <%@ OutputCache CacheProfile="Cache1Week" %>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="Main">
+    <script src="Scripts/angular.js" type="text/javascript" ></script>
+    <script src="Scripts/angular-sanitize.js" type="text/javascript"></script>
+
+    <script src="JS/app/app.js" type="text/javascript" ></script>
+    <script src="JS/app/projects.component.js" type="text/javascript"></script>
+    <script src="JS/app/projects.service.js" type="text/javascript"></script>
     <div class="shim column"></div>
     
     <div ng-app="JoymonOnline" class="page" id="resume">
@@ -14,26 +20,8 @@
                 Below are my personal projects which are available to public use.
            
             </p>
-            <asp:Repeater ID="ProjectsRepeater" runat="server" DataSourceID="ProjectsObjectDataSource">
-                <ItemTemplate>
-                    <h4><%# Eval("Name") %></h4>
-                    <p class="first">
-                        <%# Eval("Description") %>
-                        <br />
-                        <br />
-                        Application url
-               
-                        <a href="<%# Eval("Url") %>"><%# Eval("Url") %></a>
-                        <br />
-                        <asp:Label runat="server"
-                            Visible="<%# GetVisibilityFromSourceUrl(Container.DataItem) %>">Source code <a href="<%# Eval("SourceUrl") %>"><%# Eval("SourceUrl") %></a></asp:Label>
-                    </p>
-                </ItemTemplate>
-            </asp:Repeater>
+            <projects></projects>
+            
         </div>
-    </div>
-
-    <asp:ObjectDataSource ID="ProjectsObjectDataSource" runat="server" SelectMethod="GetProjects" TypeName="JoymonOnline.ProjectsDataProvider"></asp:ObjectDataSource>
-    <script src="Scripts/angular.js" type="text/javascript" ></script>
-    <script src="JS/app/app.js" type="text/javascript" ></script>
+    </div> 
 </asp:Content>

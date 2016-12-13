@@ -99,6 +99,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="indexTest.html" />
     <Content Include="JS\app\content.component.html" />
+    <Content Include="JS\app\projects.component.html" />
     <Content Include="JS\app\feed.component.html" />
     <Content Include="JS\GA.js" />
     <Content Include="Scripts\angular-animate.js" />
@@ -1040,6 +1041,8 @@
     <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
     <TypeScriptCompile Include="JS\app\content.component.ts" />
     <TypeScriptCompile Include="JS\app\content.service.ts" />
+    <TypeScriptCompile Include="JS\app\projects.component.ts" />
+    <TypeScriptCompile Include="JS\app\projects.service.ts" />
     <TypeScriptCompile Include="JS\app\project.component.ts" />
     <TypeScriptCompile Include="JS\app\GithubProject.ts" />
     <TypeScriptCompile Include="JS\app\app.ts" />

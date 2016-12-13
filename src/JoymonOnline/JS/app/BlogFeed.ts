@@ -11,4 +11,13 @@
         public publishedDate: Date;
         public content: string;
     }
+    export class ProjectResponse {
+        public data: Project;
+    }
+    export class Project {
+        public name: string;
+        public description: string;
+        public html_url: string;
+        public homepage: string;
+    }
 }

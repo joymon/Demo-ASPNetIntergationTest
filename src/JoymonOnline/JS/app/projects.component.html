@@ -1,0 +1,14 @@
+
+<div ng-repeat="prj in ctrl.Projects"> 
+    <h4>{{prj.data.name}}</h4>
+    <p class="first">
+        {{prj.data.description}}
+        <br />
+        <br />
+        Application url
+
+        <a ng-href="{{prj.data.homepage}}">{{prj.data.homepage}}</a>
+        <br />
+       Source code <a ng-href="{{prj.data.html_url}}">{{prj.data.html_url}}</a>
+    </p>
+</div>

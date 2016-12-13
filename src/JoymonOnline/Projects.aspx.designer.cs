@@ -11,23 +11,5 @@ namespace JoymonOnline {
     
     
     public partial class Projects {
-        
-        /// <summary>
-        /// ProjectsRepeater control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ProjectsRepeater;
-        
-        /// <summary>
-        /// ProjectsObjectDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource ProjectsObjectDataSource;
     }
 }
