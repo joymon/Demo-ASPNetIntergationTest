@@ -6,6 +6,8 @@
     Src="~/Controls/BlogPostView.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="Server">
     <script src="Scripts/angular.js" type="text/javascript"></script>
+    <script src="Scripts/angular-sanitize.js" type="text/javascript"></script>
+
     <script src="JS/app/app.js" type="text/javascript"></script>
     <script src="JS/app/feed.component.js" type="text/javascript"></script>
     <script src="JS/app/feed.service.js" type="text/javascript"></script>
