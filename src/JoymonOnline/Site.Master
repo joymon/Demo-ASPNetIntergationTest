@@ -16,6 +16,10 @@
     <script type="text/javascript" src="JS/GA.js">
     </script>
     <link href="Content/font-awesome.css" type="text/css" rel="Stylesheet" />
+    <link href="App_Themes/Black/Default-480px.css" rel="stylesheet" />
+    <link href="App_Themes/Black/Default-700px.css" rel="stylesheet" />
+    <link href="App_Themes/Black/Default-980px.css" rel="stylesheet" />
+    <link href="App_Themes/Black/Default.css" rel="stylesheet" />
 </head>
 <body>
         <div class="header">
