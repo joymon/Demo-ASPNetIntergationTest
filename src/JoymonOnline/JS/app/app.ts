@@ -9,8 +9,9 @@ module JoymonOnline {
         }
         private app: ng.IModule;
         constructor() {
-            this.app = angular.module("JoymonOnline", ['ngSanitize']);
+            this.app = angular.module("JoymonOnline", ['ngSanitize','ngRoute']);
             AppModule.currentCountryModule = this;
+            this.registerRoutes();
         }
         registerService(name: string, serviceConstructor: Function): void {
             console.log("Registered service " + name);
@@ -32,6 +33,18 @@ module JoymonOnline {
         }
         registerComponent(name: string, options: ng.IComponentOptions) {
             this.app.component(name, options);
+        }
+        registerRoutes(): void {
+            this.app.config(["$routeProvider",
+                function ($routeProvider: ng.route.IRouteProvider) {
+                    $routeProvider.when("/home", new HomeRoute())
+                        .when("/Resume", new ResumeRoute())
+                        .when("/Blogs", new BlogsRoute())
+                        .when("/Links", new LinksRoute())
+                        .when("/Projects", new ProjectsRoute())
+                        .when("/Changelog", new ChangelogRoute())
+                        .otherwise(new HomeRoute());
+                }]);
         }
     }
     var hrApp: AppModule = new AppModule();
