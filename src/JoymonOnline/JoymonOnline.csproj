@@ -98,6 +98,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="indexTest.html" />
+    <Content Include="JS\app\home.component.html" />
     <Content Include="JS\app\changelog.component.html" />
     <Content Include="JS\app\content.component.html" />
     <Content Include="JS\app\blogsView.component.html" />
@@ -1041,6 +1042,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
+    <TypeScriptCompile Include="JS\app\home.component.ts" />
     <TypeScriptCompile Include="JS\app\content.component.ts" />
     <TypeScriptCompile Include="JS\app\content.service.ts" />
     <TypeScriptCompile Include="JS\app\blogsView.component.ts" />
