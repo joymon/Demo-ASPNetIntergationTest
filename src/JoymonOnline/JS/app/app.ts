@@ -24,12 +24,14 @@ module JoymonOnline {
             this.app.controller(name,factory);
         }
         registerDirective(name: string,directiveFactory:ng.IDirectiveFactory): void {
-            //this.app.directive(name, );
             console.log("reg dir " + name);
             this.app.directive(name, directiveFactory);
         }
         registerFilter(name: string,fun:Function) {
             this.app.filter(name, fun);
+        }
+        registerComponent(name: string, options: ng.IComponentOptions) {
+            this.app.component(name, options);
         }
     }
     var hrApp: AppModule = new AppModule();

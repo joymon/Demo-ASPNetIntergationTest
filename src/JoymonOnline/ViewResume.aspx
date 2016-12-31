@@ -2,7 +2,13 @@
     CodeBehind="ViewResume.aspx.cs" Inherits="JoymonOnline.ViewResume" %>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="Main">
     
-            <iframe src="http://docs.google.com/gview?url=http://joymononline.in/uploads/joy_resume.pdf&embedded=true" 
-                style="width: 780px; height: 768px;" 
-                frameborder="0"></iframe>
+    <script src="Scripts/angular.js" type="text/javascript"></script>
+    <script src="Scripts/angular-sanitize.js" type="text/javascript"></script>
+
+    <script src="JS/app/app.js" type="text/javascript"></script>
+    <script src="JS/app/viewResume.component.js" type="text/javascript"></script>
+
+    <div id="ngWrapper" ng-app="JoymonOnline">
+    <view-resume></view-resume>    
+    </div>
 </asp:Content>
