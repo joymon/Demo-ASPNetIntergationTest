@@ -105,14 +105,12 @@ h2 {
     position: absolute;
     right: 5px;
     top: 13px;
-    text-transform: uppercase;
-    font-size: 10px;
+    
 }
 
 .menub {
     margin: 8px auto 2px auto;
-    text-transform: uppercase;
-    font-size: 10px;
+    
     float:left;
     position:relative;
 }
@@ -336,6 +334,8 @@ dd {
     float: left;
     padding-left: 0.15em;
     padding-right: 0.15em;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 .blogItem .postedDate {
     width:25%;
