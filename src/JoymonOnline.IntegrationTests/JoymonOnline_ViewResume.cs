@@ -31,12 +31,7 @@ namespace JoymonOnline.IntegrationTests
             }
         }
 
-        /// <summary>
-        /// Test method for css default.css
-        /// </summary>
-        /// <remarks></remarks>
-        
-        [TestMethod]
+        //[TestMethod]
         public void WhenViewResumeIsRequested_ShouldReturnIframeInContent()
         {
             using (var browser = new Browser())
@@ -46,7 +41,7 @@ namespace JoymonOnline.IntegrationTests
                 Assert.AreEqual(1,actual,"iframe missing");
             }
         }
-        [TestMethod]
+        //[TestMethod]
         public void WhenViewResumeIsRequested_ShouldReturnIframeAndItShouldPointToPDF()
         {
             using (var browser = new Browser())
