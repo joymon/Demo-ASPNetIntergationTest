@@ -880,7 +880,6 @@
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="ViewResume.aspx" />
-    <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
     <Content Include="Projects.aspx" />
     <Content Include="Controls\BlogPostView.ascx" />
     <Content Include="Entities\Login.aspx" />
@@ -1008,9 +1007,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Themes\Black\Default.skin" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.sitemap" />
