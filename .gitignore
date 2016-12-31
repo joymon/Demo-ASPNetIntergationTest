@@ -28,3 +28,8 @@
 /src/JoymonOnline/JS/app/projects.component.js
 *.map
 /src/JoymonOnline/JS/app/projects.service.js
+/src/JoymonOnline/JS/app/project.component.js
+/src/JoymonOnline/JS/app/GithubProject.js
+/src/JoymonOnline/JS/app/content.service.js
+/src/JoymonOnline/JS/app/content.component.js
+/src/JoymonOnline/JS/app/blogsView.component.js

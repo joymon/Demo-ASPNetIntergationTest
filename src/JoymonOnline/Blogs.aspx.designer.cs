@@ -11,32 +11,5 @@ namespace JoymonOnline {
     
     
     public partial class Blogs {
-        
-        /// <summary>
-        /// JoyfulWPFObjectDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource JoyfulWPFObjectDataSource;
-        
-        /// <summary>
-        /// SilverlightedWebObjectDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource SilverlightedWebObjectDataSource;
-        
-        /// <summary>
-        /// JoymonsCodeObjectDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource JoymonsCodeObjectDataSource;
     }
 }
