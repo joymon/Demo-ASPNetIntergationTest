@@ -97,7 +97,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="indexTest.html" />
+    <Content Include="index.html" />
     <Content Include="JS\app\menu.component.html" />
     <Content Include="JS\app\resume.component.html" />
     <Content Include="JS\app\viewResume.component.html" />
