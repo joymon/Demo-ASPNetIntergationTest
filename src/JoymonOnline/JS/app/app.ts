@@ -39,6 +39,7 @@ module JoymonOnline {
                 function ($routeProvider: ng.route.IRouteProvider) {
                     $routeProvider.when("/home", new HomeRoute())
                         .when("/Resume", new ResumeRoute())
+                        .when("/ViewResume",new ViewResumeRoute())
                         .when("/Blogs", new BlogsRoute())
                         .when("/Links", new LinksRoute())
                         .when("/Projects", new ProjectsRoute())

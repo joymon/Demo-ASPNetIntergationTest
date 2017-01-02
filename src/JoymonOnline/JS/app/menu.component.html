@@ -1,15 +1,6 @@
 ﻿<div >
-
-    <a id="ctl01_HyperLink1_0" class="menuItem" href="/JoymonOnline/Default.aspx"><i class="fa fa-home"></i> <span class="menuTitle"> Home </span> </a>
-
-    <a id="ctl01_HyperLink1_1" class="menuItem" href="/JoymonOnline/Resume.aspx"> <i class="fa fa-file-text-o"></i><span class="menuTitle">Resume</span></a>
-
-    <a id="ctl01_HyperLink1_2" class="menuItem" href="/JoymonOnline/Blogs.aspx"><i class="fa fa-rss"></i><span class="menuTitle">Blogs</span> </a>
-
-    <a id="ctl01_HyperLink1_3" class="menuItem" href="/JoymonOnline/Links.aspx"><i class="fa fa-link"></i> <span class="menuTitle">Links</span></a>
-
-    <a id="ctl01_HyperLink1_4" class="menuItem" href="/JoymonOnline/Projects.aspx"><i class="fa fa-windows"></i> <span class="menuTitle">Projects</span></a>
-
-    <a id="ctl01_HyperLink1_5" class="menuItem" href="/JoymonOnline/Changelog.aspx"> <i class="fa fa-list-alt"></i> <span class="menuTitle">Changelog</span></a>
-
+    <a ng-repeat="mi in $ctrl.items" class="menuItem" ng-href="#/{{mi.page}}">
+        <i ng-class="'fa fa-'+mi.faIcon"></i>
+        <span class="menuTitle">{{mi.title}} </span>
+    </a>
 </div>

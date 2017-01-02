@@ -1043,6 +1043,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
     <TypeScriptCompile Include="JS\app\menu.component.ts" />
+    <TypeScriptCompile Include="JS\app\MenuItem.ts" />
     <TypeScriptCompile Include="JS\app\resume.component.ts" />
     <TypeScriptCompile Include="JS\app\routes.ts" />
     <TypeScriptCompile Include="JS\app\viewResume.component.ts" />
