@@ -33,6 +33,11 @@ namespace JoymonOnline {
                     page: "Projects",
                     faIcon: "windows",
                     title: "Projects"
+                },
+                {
+                    page: "Changelog",
+                    faIcon: "list-alt",
+                    title: "Changelog"
                 }
             ];
         }

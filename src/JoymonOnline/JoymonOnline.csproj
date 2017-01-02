@@ -1042,6 +1042,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="JS\app\BlogFeed.ts" />
+    <TypeScriptCompile Include="JS\app\HtmlTagRemover.filter.ts" />
     <TypeScriptCompile Include="JS\app\menu.component.ts" />
     <TypeScriptCompile Include="JS\app\MenuItem.ts" />
     <TypeScriptCompile Include="JS\app\resume.component.ts" />
