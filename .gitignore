@@ -12,3 +12,6 @@
 /src/packages
 /src/JoymonOnline/JoymonOnline.csproj.user
 *.map
+/**/node_modules
+/**/*.bundle.js
+/**/bundle.js
