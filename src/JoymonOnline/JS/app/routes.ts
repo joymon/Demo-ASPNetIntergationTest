@@ -1,4 +1,4 @@
-﻿module JoymonOnline {
+﻿
     export class HomeRoute implements ng.route.IRoute {
         template = "<home></home>";
         caseInsensitiveMatch = true;
@@ -10,7 +10,6 @@
     export class ViewResumeRoute implements ng.route.IRoute {
         template = "<view-resume></view-resume>";
         caseInsensitiveMatch = false;
-
     }
     export class BlogsRoute implements ng.route.IRoute {
         template = "<blogs-view></blogs-view>";
@@ -28,4 +27,3 @@
         template = "<changelog></changelog>";
         caseInsensitiveMatch = true;
     }
-}

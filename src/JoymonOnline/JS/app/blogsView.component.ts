@@ -1,7 +1,6 @@
-/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
 //Directive for blogs view.
 
-namespace JoymonOnline {
+module JoymonOnline {
     export class BlogsViewDirective implements ng.IDirective {
         public restrict: string;
         public templateUrl: string;
@@ -14,7 +13,7 @@ namespace JoymonOnline {
             this.templateUrl = 'JS/app/blogsView.component.html';
         }
     }
-    AppModule.getInstance().registerDirective("blogsView", () => {
+    require('./app').JoymonOnline.AppModule.getInstance().registerDirective("blogsView", () => {
         return new BlogsViewDirective()
     });
 }

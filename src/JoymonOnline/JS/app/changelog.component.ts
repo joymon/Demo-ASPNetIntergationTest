@@ -1,7 +1,6 @@
-/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
 //Directive for Changelog view.
+var appmodule = require('./app');
 
-namespace JoymonOnline {
     export class ChangelogDirective implements ng.IDirective {
         public restrict: string;
         public templateUrl: string;
@@ -14,7 +13,6 @@ namespace JoymonOnline {
             this.templateUrl = 'JS/app/changelog.component.html';
         }
     }
-    AppModule.getInstance().registerDirective("changelog", () => {
+    appmodule.JoymonOnline.AppModule.getInstance().registerDirective("changelog", () => {
         return new ChangelogDirective()
     });
-}

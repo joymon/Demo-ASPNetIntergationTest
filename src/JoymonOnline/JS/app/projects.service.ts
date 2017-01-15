@@ -1,5 +1,5 @@
-module JoymonOnline {
-    export class ProjectsService {
+
+class ProjectsService {
         static $inject = ["$http", "$q"];
         private repoUrl = 'https://api.github.com/repos/';
         private prjs = ["joyful-visualstudio",
@@ -20,7 +20,7 @@ module JoymonOnline {
                 console.log(ret[0].headers());
             }
         }
-        GetAllProjects(userName: string): ng.IHttpPromise<ProjectResponse[]> {
+        GetAllProjects(userName: string): ng.IHttpPromise<JoymonOnline.ProjectResponse[]> {
             var deffered = this.q.defer<any>();
 
             this.q.all(this.prjs.map((value: string, index: number, array: string[]) => {
@@ -34,5 +34,5 @@ module JoymonOnline {
             return deffered.promise;
         }
     }
-    JoymonOnline.AppModule.getInstance().registerService("ProjectsService", ProjectsService);
-}
+    require('./app').JoymonOnline.AppModule.getInstance().registerService("ProjectsService", ProjectsService);
+export = ProjectsService;

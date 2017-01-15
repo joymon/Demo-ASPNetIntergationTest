@@ -1,5 +1,5 @@
-module JoymonOnline {
-    export class ContentService {
+var appmodule = require('./app');
+     class ContentService {
         static $inject = ["$http", "$q"];
 
         http: ng.IHttpService;
@@ -20,9 +20,12 @@ module JoymonOnline {
             let lurl = this.GetUrl(feedURL);
             var deffered = this.q.defer<any>();
             this.http.get<any>(lurl)
-                .error((err) => { deffered.reject(err); })
                 .then((s) => {
                     deffered.resolve({ data: s.data });
+                })
+                .catch((err) => {
+                    console.log(err); 
+                    deffered.reject(err); 
                 });
             return deffered.promise;
         }
@@ -30,10 +33,8 @@ module JoymonOnline {
             return "Test data";
         }
         GetWhoAmI(): string {
-            return "Test data";
+            return "Test data wh";
         }
     }
-    //angular.module('CountryApp').service("CountryMetaDataService", ["$http", '$q', 'HttpService', CountryMetaDataService]);
-    JoymonOnline.AppModule.getInstance().registerService("ContentService", ContentService);
-    
-}
+    appmodule.JoymonOnline.AppModule.getInstance().registerService("ContentService", ContentService);
+    export = ContentService;

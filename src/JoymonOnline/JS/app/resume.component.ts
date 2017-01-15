@@ -1,4 +1,3 @@
-/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
 //Directive for Changelog view.
 
 namespace JoymonOnline {
@@ -8,5 +7,5 @@ namespace JoymonOnline {
             this.templateUrl = 'JS/app/resume.component.html';
         }
     }
-    AppModule.getInstance().registerComponent("resume",new ResumeComponent());
+    require('./app').JoymonOnline.AppModule.getInstance().registerComponent("resume",new ResumeComponent());
 }

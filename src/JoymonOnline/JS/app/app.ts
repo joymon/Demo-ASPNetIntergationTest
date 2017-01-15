@@ -1,5 +1,8 @@
-﻿/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
-module JoymonOnline {
+﻿var angular = require('angular');
+var sanitize = require('angular-sanitize');
+var router = require('angular-route');
+import routes = require('./routes');
+export module JoymonOnline {
     "use strict";
     export class AppModule {
         //Do not expose the property as it is not expected to change from outside.
@@ -33,18 +36,28 @@ module JoymonOnline {
         }
         registerComponent(name: string, options: ng.IComponentOptions) {
             this.app.component(name, options);
+            console.log("Registered component " + name);
+             
         }
         registerRoutes(): void {
-            this.app.config(["$routeProvider",
-                function ($routeProvider: ng.route.IRouteProvider) {
-                    $routeProvider.when("/home", new HomeRoute())
-                        .when("/Resume", new ResumeRoute())
-                        .when("/ViewResume",new ViewResumeRoute())
-                        .when("/Blogs", new BlogsRoute())
-                        .when("/Links", new LinksRoute())
-                        .when("/Projects", new ProjectsRoute())
-                        .when("/Changelog", new ChangelogRoute())
-                        .otherwise(new HomeRoute());
+            this.app.config(["$routeProvider","$locationProvider",
+                function ($routeProvider: ng.route.IRouteProvider,$locationProvider :ng.ILocationProvider) {
+                    $locationProvider.hashPrefix('');
+                    $routeProvider.when("/home", new routes.HomeRoute())
+                        .when("/Resume", new routes.ResumeRoute())
+                        .when("/ViewResume",new routes.ViewResumeRoute())
+                        .when("/Blogs", new routes.BlogsRoute())
+                        .when("/Links", new routes.LinksRoute())
+                        .when("/Projects", new routes.ProjectsRoute())
+                        .when("/Changelog", new routes.ChangelogRoute())
+                        .otherwise(new routes.HomeRoute());
+                }]);
+                this.app.config(['$sceDelegateProvider', function($sceDelegateProvider :ng.ISCEDelegateProvider) {
+                    $sceDelegateProvider.resourceUrlWhitelist([
+                        // Allow same origin resource loads.
+                        'self',
+                        // Allow JSONP calls that match this pattern
+                        'https://*.blogspot.**']);
                 }]);
         }
     }

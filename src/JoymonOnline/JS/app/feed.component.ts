@@ -1,24 +1,27 @@
-/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
+var appmodule = require('./app');
 //Directive for individual Blog Feed
 
-namespace JoymonOnline {
+import feedServiceModule = require ('./feed.service');
+
     export class BlogFeedController implements ng.IController {
         static $inject = ['DataService'];
-        constructor( dataServie: BlogDataService) {
+        dataServie: feedServiceModule.BlogDataService;
+        constructor( dataServie: feedServiceModule.BlogDataService) {
             console.log("BlogFeedController created");
-            this.Url = "joymons world wpf";
-            this.Feed = { entries: [] };
+            this.dataServie = dataServie;
             //this.Feed.entries.push({ Title: "Test Title", publishDate: new Date(), content: "test content", link: 'test ur' });
             //this.Feed.entries.push({ Title: "Test Title2", publishDate: new Date(), content: "test content2", link: 'test url2' });
-            dataServie.GetPosts(this.rss)
-                .then((value: ng.IHttpPromiseCallbackArg<BlogFeedResponse>) => {
+        }
+        $onInit?(): void{
+            this.dataServie.GetPosts(this.rss)
+                .then((value: ng.IHttpPromiseCallbackArg<JoymonOnline.BlogFeedResponse>) => {
                     console.log(value.data.feed);
                     this.Feed = value.data.feed;
                 })
                 .catch((err) => { console.log("Error" + err); });
         }
         public rss: string;
-        public Feed: BlogFeed;
+        public Feed: JoymonOnline.BlogFeed;
         public Url: string;
         getUrl(): string {
             return this.Url;
@@ -41,5 +44,4 @@ namespace JoymonOnline {
             }
         }
     }
-    AppModule.getInstance().registerComponent("blogFeed",new BlogFeedComponent());
-}
+    require('./app').JoymonOnline.AppModule.getInstance().registerComponent("blogFeed",new BlogFeedComponent());

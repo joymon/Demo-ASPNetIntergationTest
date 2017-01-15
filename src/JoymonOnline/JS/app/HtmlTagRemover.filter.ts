@@ -6,12 +6,13 @@
             return (text: string): string => { return text ? String(text).replace(/<[^>]+>/gm, '') : '' };
         }
     }
-    AppModule.getInstance().registerFilter("removeTags", HTMLTagRemover.filter);
+    require('./app').JoymonOnline.AppModule.getInstance().registerFilter("removeTags", HTMLTagRemover.filter);
     export class ToDateFilter {
         public static filter(): Function {
-            return (text: string): Date => { return new Date(text.replace(/-/g, "/")); };
+            return (text: string): Date => { 
+                return new Date(text); 
+            };
         }
     }
-    AppModule.getInstance().registerFilter("toDate", ToDateFilter.filter);
-
+    require('./app').JoymonOnline.AppModule.getInstance().registerFilter("toDate", ToDateFilter.filter);
 }

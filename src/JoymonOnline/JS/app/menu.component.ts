@@ -1,4 +1,3 @@
-/// <reference path="../../Scripts/typings/angularjs/angular.d.ts" />
 //Directive for Changelog view.
 
 namespace JoymonOnline {
@@ -50,5 +49,5 @@ namespace JoymonOnline {
             this.controller = MenuController;
         }
     }
-    AppModule.getInstance().registerComponent("menu", new MenuComponent());
+    require('./app').JoymonOnline.AppModule.getInstance().registerComponent("menu", new MenuComponent());
 }
