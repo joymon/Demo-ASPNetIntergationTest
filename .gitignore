@@ -14,4 +14,4 @@
 *.map
 
 /src/**/node_modules
-/src/**/dist
+/**/dist

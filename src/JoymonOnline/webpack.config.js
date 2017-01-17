@@ -6,7 +6,7 @@ module.exports = {
         vendor:["angular","angular-sanitize","angular-route"]
     },
     output: {
-        filename: "dist/bundle.js"
+        filename: "../../dist/bundle.js"
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
@@ -17,16 +17,32 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: "../../",
+        contentBase: "../../dist",
         hot: true
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({minimize: true}),
-        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"dist/vendor.bundle.js"),
+        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"../../dist/vendor.bundle.js"),
         new CopyWebpackPlugin([
             {
                 from: '*.html',
-                to: 'dist/'
+                to: '../../dist/'
+            },
+            {
+                from:'App_Themes',
+                to:"../../dist/App_Themes"
+            },
+            {
+                from:'Content',
+                to:"../../dist/Content"
+            },
+            {
+                from:'fonts',
+                to:"../../dist/fonts"
+            },
+            {
+                from:'JS/app/*.html',
+                to:"../../dist"
             }
         ])
     ]
