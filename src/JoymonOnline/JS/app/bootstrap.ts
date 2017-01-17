@@ -1,5 +1,6 @@
 var ngModule = require("./app");
 //new ngModule.AppModule();
+// Registration of angular components go here
 require('./content.service');
 require ('./feed.service');
 require('./projects.service');
@@ -13,5 +14,4 @@ require('./blogsView.component');
 require('./links.component');
 require('./projects.component');
 require('./changelog.component');
-// Registration of angular components go here
-//require("./sample.component.ts");
+require("./viewResume.component");
