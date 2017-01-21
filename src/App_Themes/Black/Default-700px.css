@@ -1,0 +1,59 @@
+﻿@media screen and (max-width:700px) {
+    .header {
+        position: relative;
+        width: auto;
+        height: 76px;
+        margin: 0 auto 5px auto;
+    }
+
+    #home, #resume, #links,#changeLog {
+        width: auto;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+    }
+
+    #sidebar {
+        width: auto;
+        float: none
+    }
+
+    .footer {
+        background-image: url(Images/footer.gif);
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        width: auto;
+        height: 50px;
+        text-align: center;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    #coollinks {
+        display: none;
+    }
+
+    #resume h4, #links h4, #changeLog h4 {
+        position: static;
+    }
+
+    #resume #photo {
+        position: static;
+    }
+    dd {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+    #links dt{
+        position:static
+    }
+    #links dd {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}

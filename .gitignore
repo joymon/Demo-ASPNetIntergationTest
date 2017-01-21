@@ -13,5 +13,5 @@
 /src/JoymonOnline/JoymonOnline.csproj.user
 *.map
 
-/src/**/node_modules
+/node_modules
 /**/dist

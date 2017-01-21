@@ -1,0 +1,68 @@
+﻿@media screen and (max-width:480px) {
+    #coollinks {
+        display: none;
+    }
+
+    #whatsnew {
+        width: auto;
+    }
+
+    .header {
+        background-image: url(Images/footer.gif) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: auto;
+        height: auto !important;
+        margin: 0 auto 5px auto;
+        padding-bottom: 10px;
+        overflow:hidden;
+    }
+
+    h1 {
+        position: static;
+        left: 0px;
+        top: 12px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .logo {
+        position: static;
+        left: 0px;
+    }
+
+    .menua {
+        position: static;
+        right: auto;
+        float: left;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #resume h4, #links h4, #changeLog h4{
+        position: static;
+    }
+
+    #resume #photo {
+        position: static;
+    }
+
+    .menua i {
+        font-size: 2em;
+        display: block;
+        margin-left: .7em;
+        margin-right: .7em;
+        color: #CCCCCC;
+    }
+
+    .menuTitle {
+    }
+
+    dd {
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
