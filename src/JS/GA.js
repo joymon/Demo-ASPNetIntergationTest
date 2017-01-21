@@ -7,3 +7,4 @@
 
 ga('create', 'UA-67192109-1', 'auto');
 ga('send', 'pageview');
+console.log("GA Executed");

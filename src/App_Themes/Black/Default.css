@@ -214,7 +214,6 @@ h4 {
 .dot {
     color: #CCCCCC;
     line-height: 0px;
-    background-image: url('Images/whitedot.gif');
     background-repeat: repeat-x;
 }
 
@@ -272,7 +271,6 @@ dd {
 .buttonbar, .buttonbar-top {
     width: 686px;
     height: 36px;
-    background-image: url(Images/photonav.gif);
     background-repeat: no-repeat;
     margin-bottom: 5px;
     text-align: center;

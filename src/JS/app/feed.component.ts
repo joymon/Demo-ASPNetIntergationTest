@@ -1,4 +1,4 @@
-var appmodule = require('./app');
+require('./app');
 //Directive for individual Blog Feed
 
 import feedServiceModule = require ('./feed.service');

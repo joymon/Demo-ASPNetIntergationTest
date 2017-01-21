@@ -1,6 +1,7 @@
-var ngModule = require("./app");
+ require("./app");
 //new ngModule.AppModule();
 // Registration of angular components go here
+require('../GA.js');
 require('./content.service');
 require ('./feed.service');
 require('./projects.service');
@@ -15,3 +16,8 @@ require('./links.component');
 require('./projects.component');
 require('./changelog.component');
 require("./viewResume.component");
+require("../../App_Themes/Black/default.css")
+require("../../App_Themes/Black/Default-480px.css")
+require("../../App_Themes/Black/Default-700px.css")
+require("../../App_Themes/Black/Default-980px.css")
+

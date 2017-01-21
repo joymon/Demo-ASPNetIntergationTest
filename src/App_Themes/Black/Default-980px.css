@@ -1,4 +1,5 @@
-﻿@media screen and (max-width:980px) {
+﻿/* For 980px monitors*/
+@media screen and (max-width:980px) {
     .header {
         background-image: url(Images/header.gif);
         background-repeat: no-repeat;

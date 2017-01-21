@@ -1,6 +1,6 @@
 ﻿var angular = require('angular');
-var sanitize = require('angular-sanitize');
-var router = require('angular-route');
+require('angular-sanitize');
+require('angular-route');
 import routes = require('./routes');
 export module JoymonOnline {
     "use strict";
@@ -22,13 +22,12 @@ export module JoymonOnline {
         }
         registerController(name: string, controllerConstructor: ng.IController): void {
             this.app.controller(name, () => controllerConstructor);
-            var f: Function;
         }
         registerControllerWithFactory(name: string, factory: (...args: any[])=>ng.IController) {
             this.app.controller(name,factory);
         }
         registerDirective(name: string,directiveFactory:ng.IDirectiveFactory): void {
-            console.log("reg dir " + name);
+            console.log("Registered directive " + name);
             this.app.directive(name, directiveFactory);
         }
         registerFilter(name: string,fun:Function) {
@@ -61,5 +60,5 @@ export module JoymonOnline {
                 }]);
         }
     }
-    var hrApp: AppModule = new AppModule();
+    new AppModule();
 }

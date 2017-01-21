@@ -13,7 +13,9 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            { test: /\.ts$/, loader: 'ts-loader' },
+            { test: /\.css$/, loaders: ['style', 'css']},
+             { test: /\.gif/, loader: "file-loader?emitFile=false&name=App_Themes/Black/images/[name].[ext]" }
         ]
     },
     devServer: {
@@ -30,8 +32,8 @@ module.exports = {
                 flatten:true
             },
             {
-                from:'src/App_Themes',
-                to:"dist/App_Themes"
+                from:'src/App_Themes/Black/Images',
+                to:"dist/App_Themes/Black/images"
             },
             {
                 from:'src/Content',
