@@ -36,6 +36,7 @@ on_success:
   - git checkout master
   - git status
   - git add docs
+  - git add ./docs/*
   - git commit -m "[skip ci]" -- docs 
   - git status
   - git push origin master 
