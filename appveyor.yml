@@ -35,8 +35,10 @@ on_success:
   - ps: Copy-Item dist\* docs
   - dir docs
   - git status
-  - git add docs
-  - git add -f ./docs/*
+  - git add -f docs
+  - cd docs
+  - git add . --force
+  - cd..
   - git commit -m "[skip ci]" -- docs 
   - git status
   - git push origin master 
