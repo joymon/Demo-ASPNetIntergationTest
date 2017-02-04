@@ -27,21 +27,15 @@ artifacts:
 on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - ps: New-Item -ItemType Directory -Force docs
   - git config --global user.email "joymon@gmail.com"
   - git config --global user.name "joymon"
   - git checkout master
-  - ps: Remove-Item docs\*
+  - rd /s /q docs
+  - ps: New-Item -ItemType Directory -Force docs
   - ps: Copy-Item dist\* docs -recurse
   - dir docs
   - git status
   - git add docs
-  #- cd docs
-  #- git add App_Themes --force
-  #- git add JS --force
-  #- git add fonts --force
-  #- git add Content --force
-  #- cd..
   - git status
   - git commit -m "[skip ci]" -- docs 
   - git status
