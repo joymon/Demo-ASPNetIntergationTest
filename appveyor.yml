@@ -28,12 +28,12 @@ on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - ps: New-Item -ItemType Directory -Force docs
-  - ps: Remove-Item docs\*
-  - ps: Copy-Item dist\* docs
   - dir docs
   - git config --global user.email "joymon@gmail.com"
   - git config --global user.name "joymon"
   - git checkout master
+  - ps: Remove-Item docs\*
+  - ps: Copy-Item dist\* docs
   - git status
   - git add docs
   - git add -f ./docs/*
