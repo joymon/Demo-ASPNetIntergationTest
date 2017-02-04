@@ -32,16 +32,16 @@ on_success:
   - git config --global user.name "joymon"
   - git checkout master
   - ps: Remove-Item docs\*
-  - ps: Copy-Item dist\* docs
+  - ps: Copy-Item dist\* docs -recurse
   - dir docs
   - git status
-  - git add -f docs
-  - cd docs
-  - git add App_Themes --force
-  - git add JS --force
-  - git add fonts --force
-  - git add Content --force
-  - cd..
+  - git add docs
+  #- cd docs
+  #- git add App_Themes --force
+  #- git add JS --force
+  #- git add fonts --force
+  #- git add Content --force
+  #- cd..
   - git status
   - git commit -m "[skip ci]" -- docs 
   - git status
