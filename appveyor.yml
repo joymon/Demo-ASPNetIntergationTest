@@ -37,7 +37,10 @@ on_success:
   - git status
   - git add -f docs
   - cd docs
-  - git add . --force
+  - git add App_Themes --force
+  - git add JS --force
+  - git add fonts --force
+  - git add Content --force
   - cd..
   - git commit -m "[skip ci]" -- docs 
   - git status
