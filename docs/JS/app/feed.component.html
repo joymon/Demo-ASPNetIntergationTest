@@ -1,0 +1,25 @@
+<div>
+    <h4><a ng-href="{{ctrl.Feed.link}}" target="_blank">{{ctrl.Feed.title}}</a></h4>
+    <div class="blogItems">
+        <div class="blogItem" ng-repeat="feed in ctrl.Feed.entries">
+            <table role="presentation">
+                <tr>
+                    <td>
+                        <a id="HyperLink1" runat="server" target="_blank" ng-href="{{feed.link}}">
+                            {{feed.title}}
+                        </a>
+                    </td>
+                    <td class="postedDate">
+                        {{feed.publishedDate | toDate | date :'dd MMM yy'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        {{feed.content | removeTags | limitTo:150}}{{feed.content.length > 150 ? '...' : ''}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
