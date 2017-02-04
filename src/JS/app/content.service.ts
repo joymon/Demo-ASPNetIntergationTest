@@ -9,8 +9,8 @@ var appmodule = require('./app');
             this.q = $q;
         }
         sourceToUrlMap = {
-            WhatsNew: "http://joymon.github.io/Data/Home/WhatsNew.html",
-            WhoAmI: "http://joymon.github.io/Data/Home/WhoAmI.html"
+            WhatsNew: "https://joymon.github.io/Data/Home/WhatsNew.html",
+            WhoAmI: "https://joymon.github.io/Data/Home/WhoAmI.html"
         };
 
         GetUrl(source: string): string {
