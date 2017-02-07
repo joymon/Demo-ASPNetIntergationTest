@@ -24,7 +24,7 @@ class ProjectsService {
             var deffered = this.q.defer<any>();
 
             this.q.all(this.prjs.map((value: string, index: number, array: string[]) => {
-                return this.http.get(this.getProjectUrl(userName, value));
+                return this.http.get(this.getProjectUrl(userName, value),{cache:true});
             }))
                 .then((s) => {
                     this.logAPIQuota(s);

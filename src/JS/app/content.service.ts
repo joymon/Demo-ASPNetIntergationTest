@@ -19,7 +19,7 @@ var appmodule = require('./app');
         Get(feedURL: string): ng.IHttpPromise<any> {
             let lurl = this.GetUrl(feedURL);
             var deffered = this.q.defer<any>();
-            this.http.get<any>(lurl)
+            this.http.get<any>(lurl,{cache:true})
                 .then((s) => {
                     deffered.resolve({ data: s.data });
                 })
