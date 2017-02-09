@@ -6,7 +6,7 @@
             return (text: string): string => { return text ? String(text).replace(/<[^>]+>/gm, '') : '' };
         }
     }
-    require('./app').JoymonOnline.AppModule.getInstance().registerFilter("removeTags", HTMLTagRemover.filter);
+    require('./app/app').JoymonOnline.AppModule.getInstance().registerFilter("removeTags", HTMLTagRemover.filter);
     export class ToDateFilter {
         public static filter(): Function {
             return (text: string): Date => { 
@@ -14,5 +14,5 @@
             };
         }
     }
-    require('./app').JoymonOnline.AppModule.getInstance().registerFilter("toDate", ToDateFilter.filter);
+    require('./app/app').JoymonOnline.AppModule.getInstance().registerFilter("toDate", ToDateFilter.filter);
 }
