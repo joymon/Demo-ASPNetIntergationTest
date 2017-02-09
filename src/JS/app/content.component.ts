@@ -1,4 +1,4 @@
-//Directive for individual content
+//component for individual content
 var appmodule = require('./app');
 import ContentService = require('./content.service');
  export module JoymonOnline{

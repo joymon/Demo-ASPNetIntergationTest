@@ -13,7 +13,7 @@ require('./resume.component');
 require('./feed.component');
 require('../blogsView.component');
 require('./links.component');
-require('./projects.component');
+require('../projects.component');
 require('../changelog.component');
 require("./viewResume.component");
 require("../../App_Themes/Black/default.css")
