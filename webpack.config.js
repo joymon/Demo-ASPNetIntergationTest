@@ -47,6 +47,11 @@ module.exports = {
                 from:'src/JS/app/*.html',
                 to:"dist/JS/app",
                 flatten:true
+            },
+            {
+                from:'src/JS/*.html',
+                to:"dist/JS",
+                flatten:true
             }
         ])
     ]

@@ -11,7 +11,7 @@ require('./menu.component');
 require('./home.component');
 require('./resume.component');
 require('./feed.component');
-require('./blogsView.component');
+require('../blogsView.component');
 require('./links.component');
 require('./projects.component');
 require('./changelog.component');
