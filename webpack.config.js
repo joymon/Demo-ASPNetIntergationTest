@@ -15,7 +15,12 @@ module.exports = {
         loaders: [
             { test: /\.ts$/, loader: 'ts-loader' },
             { test: /\.css$/, loaders: ['style', 'css']},
-             { test: /\.gif/, loader: "file-loader?emitFile=false&name=App_Themes/Black/images/[name].[ext]" }
+             { test: /\.gif/, loader: "file-loader?emitFile=false&name=App_Themes/Black/images/[name].[ext]" }, 
+             {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"}, 
+      {      test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,      loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"},
+      {      test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,      loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"    },
+       {      test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,      loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"    }, 
+       {      test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,      loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"    }
         ]
     },
     devServer: {
@@ -36,13 +41,13 @@ module.exports = {
                 to:"dist/App_Themes/Black/images"
             },
             {
-                from:'src/Content',
-                to:"dist/Content"
+                from:'node_modules/font-awesome/fonts',
+                to:"dist/App_Themes/fonts"
             },
-            {
-                from:'src/fonts',
-                to:"dist/fonts"
-            },
+            // {
+            //     from:'src/fonts',
+            //     to:"dist/fonts"
+            // },
             {
                 from:'src/JS/app/*.html',
                 to:"dist/JS/app",

@@ -1,6 +1,7 @@
  require("./app");
 //new ngModule.AppModule();
 // Registration of angular components go here
+require('font-awesome/css/font-awesome.css');
 require('../GA.js');
 require('./content.service');
 require ('./feed.service');
