@@ -9,7 +9,8 @@ install:
   - ps: Install-Product node $Env:nodejs_version
   - npm install -g npm
   - npm install -g webpack  
-  
+build_script:
+  - ps: $env:APPVEYOR_BUILD_VERSION | set-content .\src\JS\version.html
 # scripts to run before build
 # Post-install test scripts.
 test_script:
