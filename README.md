@@ -3,5 +3,6 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open")
 [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badges/gpa.svg)](https://codeclimate.com/github/joymon/JoymonOnline.In)
+[![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
