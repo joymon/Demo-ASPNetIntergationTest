@@ -40,8 +40,7 @@ export class FeedService {
             let actualUrl = urlFormat.replace('{blog}',feed)    
             this.http.jsonp<any>(actualUrl)
                 .then((s) => {
-                    var res : ng.IHttpPromiseCallbackArg<JoymonOnline.BlogFeedResponse> = {};
-                    res = s;
+                    var res : ng.IHttpPromiseCallbackArg<JoymonOnline.BlogFeedResponse> = s;
                     var response : JoymonOnline.BlogFeedResponse = {feed: s.data.feed};
                     response.feed.link = s.data.feed.link[2].href;
                     response.feed.title = s.data.feed.title.$t;

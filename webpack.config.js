@@ -9,12 +9,12 @@ module.exports = {
         filename: "dist/bundle.js"
     },
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: [ '.webpack.js', '.web.js', '.ts', '.js']
     },
     module: {
         loaders: [
             { test: /\.ts$/, loader: 'ts-loader' },
-            { test: /\.css$/, loaders: ['style', 'css']},
+            { test: /\.css$/, loaders: ['style-loader', 'css-loader']},
              { test: /\.gif/, loader: "file-loader?emitFile=false&name=App_Themes/Black/images/[name].[ext]" }, 
              {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"}, 
       {      test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,      loader: "file-loader?emitFile=false&name=App_Themes/fonts/[name].[ext]"},
@@ -29,7 +29,7 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({minimize: true}),
-        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"dist/vendor.bundle.js"),
+        new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'dist/vendor.bundle.js'}),
         new CopyWebpackPlugin([
             {
                 from: 'src/*.html',

@@ -30,8 +30,8 @@ export module JoymonOnline {
             console.log("Registered directive " + name);
             this.app.directive(name, directiveFactory);
         }
-        registerFilter(name: string,fun:Function) {
-            this.app.filter(name, fun);
+        registerFilter(name: string,fun:ng.IFilterFunction) {
+            this.app.filter(name,(func) => fun);
         }
         registerComponent(name: string, options: ng.IComponentOptions) {
             this.app.component(name, options);
