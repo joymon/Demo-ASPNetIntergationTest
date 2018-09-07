@@ -4,7 +4,8 @@
   "description": "",
   "main": "bundle.js",
   "dependencies": {
-    "webpack": "^2.2.0"
+    "webpack": "^2.2.0",
+    "webpack-cli": "^3.1.0"
   },
   "devDependencies": {
     "@types/angular": "^1.5.23",

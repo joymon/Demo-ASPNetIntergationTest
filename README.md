@@ -7,3 +7,9 @@
 [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
+
+# How to run
+- Clone
+- npm install
+- build - node_modules\.bin\webpack -p (Windows)
+- Serve - node_modules\.bin\webpack-dev-server --open (Windows)

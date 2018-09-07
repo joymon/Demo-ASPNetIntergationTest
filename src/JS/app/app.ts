@@ -31,7 +31,7 @@ export module JoymonOnline {
             this.app.directive(name, directiveFactory);
         }
         registerFilter(name: string,fun:ng.IFilterFunction) {
-            this.app.filter(name,(func) => fun);
+            this.app.filter(name,() => {console.log("factory"); return fun();});
         }
         registerComponent(name: string, options: ng.IComponentOptions) {
             this.app.component(name, options);
