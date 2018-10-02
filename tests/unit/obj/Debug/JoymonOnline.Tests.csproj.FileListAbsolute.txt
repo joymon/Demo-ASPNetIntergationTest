@@ -1,9 +1,0 @@
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\JoymonOnline.Tests.dll.config
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\JoymonOnline.Tests.dll
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\JoymonOnline.Tests.pdb
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\JoymonOnline.dll
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\bin\Debug\JoymonOnline.pdb
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\obj\Debug\JoymonOnline.Tests.csprojResolveAssemblyReference.cache
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\obj\Debug\JoymonOnline.Tests.dll
-C:\Users\joymo\Source\Repos\JoymonOnline.In\src\JoymonOnline.Tests\obj\Debug\JoymonOnline.Tests.pdb
