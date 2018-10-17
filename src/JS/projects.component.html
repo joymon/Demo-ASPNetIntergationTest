@@ -15,9 +15,7 @@
                 {{prj.data.description}}
                 <br />
                 <br />
-                Application url
-
-                <a ng-href="{{prj.data.homepage}}">{{prj.data.homepage}}</a>
+                <span ng-show='prj.data.homepage.length>0'>Application url <a ng-href="{{prj.data.homepage}}">{{prj.data.homepage}}</a></span>
                 <br />
                 Source code <a ng-href="{{prj.data.html_url}}">{{prj.data.html_url}}</a>
             </p>
