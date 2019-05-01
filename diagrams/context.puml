@@ -1,0 +1,15 @@
+@startuml JoymonOnline_Context
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+Person(personAlias, "Internet User", "Any user accessing the web site")
+System(joymononline, "JoymonOnline", "JoymonOnline Website")
+System_Ext(blogger,"Blogger","Blogger")
+System_Ext(stackOverflow,"StackOverflow","A question answer site")
+System_Ext(github,"StackOverflow","A question answer site")
+System_Ext(linkedIn,"Linked In","A professional networking site")
+Rel(personAlias, joymononline, "Access site", "TCP 80,http,Anonymouse")
+Rel(joymononline,blogger,"Access blog feed","TCP 443,http(s)")
+Rel(joymononline,stackOverflow,"Access profile data to show badge","TCP 443,http(s)")
+Rel(joymononline,github,"Access the project details, get whatnew page contents","TCP 443,http(s)")
+Rel(joymononline,linkedIn,"Access profile to show profile image","TCP 443,http(s)")
+@enduml
