@@ -11,5 +11,5 @@ Source code of my personal site www.joymononline.in.
 # How to run
 - Clone
 - npm install
-- build - node_modules\.bin\webpack -p (Windows)
-- Serve - node_modules\.bin\webpack-dev-server --open (Windows)
+- build - npm run devBuild
+- Serve - npm run Serve
