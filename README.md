@@ -12,4 +12,4 @@ Source code of my personal site www.joymononline.in.
 - Clone
 - npm install
 - build - npm run devBuild
-- Serve - npm run Serve
+- Serve - npm run start
