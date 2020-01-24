@@ -92,6 +92,11 @@ module.exports = {
         flatten:true
       },
       {
+        from: "src/apps/karel/*.*",
+        to:'apps/karel',
+        flatten:true
+      },
+      {
         from: "data/home/*.html",
         to:'data/home',
         flatten:true
