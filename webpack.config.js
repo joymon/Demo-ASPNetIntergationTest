@@ -90,7 +90,11 @@ module.exports = {
         from: "src/apps/prayerbook/*.*",
         to:'apps/prayerbook',
         flatten:true
-
+      },
+      {
+        from: "data/home/*.html",
+        to:'data/home',
+        flatten:true
       }
     ])
   ]
