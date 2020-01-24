@@ -96,6 +96,12 @@ module.exports = {
         to:'data/home',
         flatten:true
       }
+      ,
+      {
+        from: "uploads/*.*",
+        to:'uploads',
+        flatten:true
+      }
     ])
   ]
 };
