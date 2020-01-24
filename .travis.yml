@@ -1,0 +1,19 @@
+if: tag IS present OR commit_message = "[deploy ci]" OR tag = true
+language: node_js
+node_js:
+  - "stable"
+before-install:
+  - npm -v
+before_script:
+  - echo ${TRAVIS_JOB_NUMBER}
+script: npm -v
+deploy:
+    - provider: pages
+      local_dir: docs/
+      skip_cleanup: true
+      github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+      on:
+        tags: true
+      repo: JoymonOnline/joymononline.github.io
+      target_branch: master
+      keep-history: true
