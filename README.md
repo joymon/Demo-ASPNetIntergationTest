@@ -11,7 +11,9 @@ Deploy [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](http
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
 
-# How to run
+# Development
+
+## How to run locally
 - Clone
 - npm install
 - build - npm run devBuild
