@@ -6,7 +6,7 @@ Code [![Average time to resolve an issue](http://isitmaintained.com/badge/resolu
 [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)
 [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)
 
-Deploy - [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In)
+Deploy [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In)
 
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
@@ -17,6 +17,15 @@ Source code of my personal site www.joymononline.in.
 - build - npm run devBuild
 - Serve - npm run start
 
-Hosting
+# Deployment
+
+## Development
+-   Automatically after each each from AppVeyor
+
+## Production
+- Create a release.
+- Release create a tag and Travis CI will release when there is a tag.
+
+# Hosting
 - Development [https://joymon.github.io/JoymonOnline.In/](https://joymon.github.io/JoymonOnline.In/)
 - Production [https://joymononline.in/](https://joymononline.in/)
