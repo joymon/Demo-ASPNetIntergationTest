@@ -12,3 +12,7 @@ Source code of my personal site www.joymononline.in.
 - npm install
 - build - npm run devBuild
 - Serve - npm run start
+
+Hosting
+- Development [https://joymon.github.io/JoymonOnline.In/](https://joymon.github.io/JoymonOnline.In/)
+- Production [https://joymononline.in/](https://joymononline.in/)
