@@ -1,11 +1,14 @@
 <div>
-    <h4><a ng-href="{{ctrl.Feed.link}}" target="_blank">{{ctrl.Feed.title}}</a></h4>
+    <h4>
+        <a ng-href="{{ctrl.Feed.link}}" target="_blank" rel="noopener noreferrer">{{ctrl.Feed.title}}</a>
+    </h4>
     <div class="blogItems">
         <div class="blogItem" ng-repeat="feed in ctrl.Feed.entries">
             <table role="presentation">
                 <tr>
                     <td>
-                        <a id="HyperLink1" runat="server" target="_blank" ng-href="{{feed.link}}">
+                        <a id="HyperLink1" runat="server" target="_blank" ng-href="{{feed.link}}"
+                            rel="noopener noreferrer">
                             {{feed.title}}
                         </a>
                     </td>
