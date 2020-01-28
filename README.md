@@ -5,6 +5,7 @@ Code [![Average time to resolve an issue](http://isitmaintained.com/badge/resolu
 [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badges/gpa.svg)](https://codeclimate.com/github/joymon/JoymonOnline.In)
 [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)
 [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/)
 
 Deploy [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In)
 
