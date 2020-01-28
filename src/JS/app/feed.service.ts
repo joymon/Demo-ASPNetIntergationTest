@@ -9,8 +9,7 @@ export class BlogDataService {
         }
         GetPosts(feedURL: string): ng.IHttpPromise<any> {
             
-            let lurl = '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=3&q=' + encodeURIComponent(feedURL);
-            lurl = "https://joymonscode.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json"
+            let lurl = "https://joymonscode.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json";
             var deffered = this.q.defer<any>();
             this.http.jsonp<any>(lurl)
                 .then((s) => {
