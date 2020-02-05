@@ -20,6 +20,10 @@ Source code of my personal site www.joymononline.in.
 - build - npm run devBuild
 - Serve - npm run start
 
+# Running tests
+
+TBD
+
 # Deployment
 
 ## Development
@@ -32,3 +36,26 @@ Source code of my personal site www.joymononline.in.
 # Hosting
 - Development [https://joymon.github.io/JoymonOnline.In/](https://joymon.github.io/JoymonOnline.In/)
 - Production [https://joymononline.in/](https://joymononline.in/)
+
+# Built with
+- AngularJS - Frontend technology
+- TypeScript - Coding AngularJS.
+- NodeJS - To assemble project source, compile and run tests
+- PowerShell - Automating tasks
+- Code climate - Ensuring code quality
+- LGTM - Ensuring code quality
+- AppVeyor - Continuous integration and delivery to development environment.
+- TravisCI - Continuous delivery to production.
+
+# Contributing
+
+- Not sure how much somebody else can contribute to my personal web site, but PRs are welcome.
+
+# License 
+
+This project is licensed under the GNU GPL3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+
+# Acknowledgements
+
+- All the developers whose technologies are used
+- GitHub, AppVeyor, TravisCI for their freemium pricing model.
