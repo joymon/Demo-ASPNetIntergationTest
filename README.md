@@ -9,6 +9,8 @@ Code [![Average time to resolve an issue](http://isitmaintained.com/badge/resolu
 
 Deploy [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In)
 
+Production [![SSL Rating](https://sslbadge.org/?domain=joymononline.in)](https://www.ssllabs.com/ssltest/analyze.html?d=joymononline.in)
+
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
 
