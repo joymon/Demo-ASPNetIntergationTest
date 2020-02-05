@@ -51,6 +51,9 @@ TBD
 
 - Not sure how much somebody else can contribute to my personal web site, but PRs are welcome.
 
+# Authors
+- Joy George Kunjikkuru
+
 # License 
 
 This project is licensed under the GNU GPL3.0 License - see the [LICENSE.md](LICENSE.md) file for details
