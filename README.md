@@ -4,6 +4,7 @@ Code [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badg
 [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)
 [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/context:javascript)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/JoymonOnline.In)
 ![GitHub repo size](https://img.shields.io/github/repo-size/joymon/JoymonOnline.In)
 
