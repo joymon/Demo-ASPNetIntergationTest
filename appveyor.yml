@@ -28,7 +28,7 @@ after_test:
 
 artifacts:
   - path: dist
-on_success:
+deploy_script:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "joymon@gmail.com"
@@ -45,5 +45,5 @@ on_success:
   - git commit -m "[deploy ci]" -- docs 
   - git status
   - git push origin master 
-# Don't actually build.
+# Don't actually do default build.
 build: off
