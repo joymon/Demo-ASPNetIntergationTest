@@ -10,6 +10,6 @@ describe('Home', () => {
         await page.goto('http://localhost:8080');
         console.log("Navigated to page");
         await expect(page.title()).resolves.toMatch('Joymon Online');
-        await page.waitFor(1000);
+        //await page.waitFor(1000);
     });
 });
