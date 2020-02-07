@@ -15,6 +15,7 @@
     "angular": "^1.7.9",
     "angular-route": "^1.7.9",
     "angular-sanitize": "^1.7.9",
+    "codecov": "^3.6.5",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.0",
     "file-loader": "^2.0.0",
@@ -32,7 +33,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jest",
+    "test": "./node_modules/.bin/jest && codecov",
     "start": "./node_modules/.bin/webpack-dev-server --open",
     "serve": "./node_modules/.bin/webpack-dev-server",
     "devBuild": "./node_modules/.bin/webpack --mode development"

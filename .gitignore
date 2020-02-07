@@ -18,3 +18,4 @@
 /.vs
 /tests/**/obj
 /tests/**/bin
+/coverage
