@@ -1,19 +1,14 @@
-Build [![Build status](https://ci.appveyor.com/api/projects/status/5mycvjhhmw36r6pl?svg=true)](https://ci.appveyor.com/project/joymon/demo-aspnetintergationtest)
-
-Code [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badges/gpa.svg)](https://codeclimate.com/github/joymon/JoymonOnline.In)
-[![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)
-[![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/context:javascript)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/JoymonOnline.In)
-![GitHub repo size](https://img.shields.io/github/repo-size/joymon/JoymonOnline.In)
-
-Issues [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open")
-
-Deploy [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In)
-
-Production [![SSL Rating](https://sslbadge.org/?domain=joymononline.in)](https://www.ssllabs.com/ssltest/analyze.html?d=joymononline.in)
+| Area      |      Badges  |
+|:----------|:-------------|
+| Build |[![Build status](https://ci.appveyor.com/api/projects/status/5mycvjhhmw36r6pl?svg=true)](https://ci.appveyor.com/project/joymon/demo-aspnetintergationtest) |
+| Code | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/JoymonOnline.In) ![GitHub repo size](https://img.shields.io/github/repo-size/joymon/JoymonOnline.In)  [![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/)   |
+| Code Quality | [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/context:javascript) [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badges/gpa.svg)](https://codeclimate.com/github/joymon/JoymonOnline.In) |
+| Deps | [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)|
+| Security | [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In) |
+| Test | [![codecov](https://codecov.io/gh/joymon/JoymonOnline.In/branch/master/graph/badge.svg)](https://codecov.io/gh/joymon/JoymonOnline.In) |
+| Issues | Issues [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open") |
+| Deploy |  [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In) |
+| Production | [![SSL Rating](https://sslbadge.org/?domain=joymononline.in)](https://www.ssllabs.com/ssltest/analyze.html?d=joymononline.in) |
 
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
