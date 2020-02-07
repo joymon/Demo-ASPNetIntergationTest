@@ -3,6 +3,9 @@ environment:
   nodejs_version: "8"
   access_token:
     secure: YwffwDvba/ADlMJbtnOM7cKUqudcbYCt2K74HOtBvscwylmIMSRmrX2VKc+fuNjN
+skip_commits:
+  message: /\[deploy ci\]/
+    
 # scripts that run after cloning repository
 install:
   # install node 
@@ -11,18 +14,18 @@ install:
   - npm install -g webpack
   - npm install -g webpack-cli
   - ps: $env:APPVEYOR_BUILD_VERSION | set-content .\src\JS\version.html
-# scripts to run before build
-# Post-install test scripts.
-test_script:
-  # install node modules
   - cd %APPVEYOR_BUILD_FOLDER%
   - npm install
+build_script:
+  - webpack -p
+# Post-install test scripts.
+test_script:
+   - npm test
+after_test:
+  # install node modules
   # run webpack with production flag
   - webpack -p
 
-skip_commits:
-  message: /\[deploy ci\]/
-  
 artifacts:
   - path: dist
 on_success:
