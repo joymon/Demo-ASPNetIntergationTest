@@ -22,15 +22,15 @@ Source code of my personal site www.joymononline.in.
 
 ## How to run locally
 - Clone
-- npm install
-- build - npm run devBuild
-- Serve - npm run start
+- `npm install`
+- build - `npm run devBuild`
+- Serve - `npm run start`
 
 # Running tests
 
 Below command uses Jest to run tests using Puppeteer after starting a web server using Webpack. Currently there are only integration tests.
 
-- npm test
+- `npm test`
 
 # Deployment
 
