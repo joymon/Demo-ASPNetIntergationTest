@@ -28,7 +28,9 @@ Source code of my personal site www.joymononline.in.
 
 # Running tests
 
-TBD
+Below command uses Jest to run tests using Puppeteer after starting a web server using Webpack. Currently there are only integration tests.
+
+- npm test
 
 # Deployment
 

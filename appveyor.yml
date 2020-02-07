@@ -38,8 +38,8 @@ deploy_script:
   - ps: New-Item -ItemType Directory -Force docs
   - ps: Copy-Item dist\* docs -recurse
   - ps: Copy-Item CNAME docs 
-  - dir docs
-  - git status
+  #- dir docs
+  #- git status
   - git add docs
   - git status
   - git commit -m "[deploy ci]" -- docs 
