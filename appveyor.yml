@@ -20,7 +20,9 @@ before_build:
   - ps: $env:APPVEYOR_BUILD_VERSION | set-content .\src\JS\version.html
 build_script:
   - webpack -p
-# Post-install test scripts.
+#---------------------------------#
+#       tests configuration       #
+#---------------------------------#
 test_script:
    - npm test
 after_test:
@@ -46,5 +48,3 @@ deploy_script:
   - git commit -m "[deploy ci]" -- docs 
   - git status
   - git push origin master 
-# Don't actually do default build.
-build: off
