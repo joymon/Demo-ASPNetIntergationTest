@@ -8,7 +8,6 @@
 | Test | [![codecov](https://codecov.io/gh/joymon/JoymonOnline.In/branch/master/graph/badge.svg)](https://codecov.io/gh/joymon/JoymonOnline.In) |
 | Issues | [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open") |
 | Deploy |  [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In) |
-| Production | [![SSL Rating](https://sslbadge.org/?domain=joymononline.in)](https://www.ssllabs.com/ssltest/analyze.html?d=joymononline.in) |
 
 # JoymonOnline.In
 Source code of my personal site www.joymononline.in.
