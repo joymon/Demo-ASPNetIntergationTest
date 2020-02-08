@@ -26,6 +26,11 @@ Below command uses Jest to run tests using Puppeteer after starting a web server
 
 - `npm test`
 
+## Test coverage
+
+- `npm test` will generate the coverate report
+- `npm run codecov` to upload report to [CodeCov.io](https://codecov.io/gh/joymon/JoymonOnline.In)
+
 # Deployment
 
 ## Development
