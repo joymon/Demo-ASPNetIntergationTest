@@ -26,9 +26,7 @@ build_script:
 test_script:
    - npm test
 after_test:
-  # install node modules
-  # run webpack with production flag
-  #- webpack -p
+  - npm run codecov
 
 artifacts:
   - path: dist
