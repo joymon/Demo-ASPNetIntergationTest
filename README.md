@@ -1,7 +1,7 @@
 | Area      |      Badges  |
 |:----------|:-------------|
 | Build |[![Build status](https://ci.appveyor.com/api/projects/status/5mycvjhhmw36r6pl?svg=true)](https://ci.appveyor.com/project/joymon/demo-aspnetintergationtest) |
-| Code | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/JoymonOnline.In) ![GitHub repo size](https://img.shields.io/github/repo-size/joymon/JoymonOnline.In) [![](https://tokei.rs/b1/github/joymon/prayerbook)](https://github.com/joymon/prayerbook) |
+| Code | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/JoymonOnline.In) ![GitHub repo size](https://img.shields.io/github/repo-size/joymon/JoymonOnline.In) [![](https://tokei.rs/b1/github/joymon/JoymonOnline.In)](https://github.com/joymon/JoymonOnline.In) |
 | Code Quality | [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/context:javascript) [![Code Climate](https://codeclimate.com/github/joymon/JoymonOnline.In/badges/gpa.svg)](https://codeclimate.com/github/joymon/JoymonOnline.In) |
 | Deps | [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)|
 | Security | [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)  [![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/) |
