@@ -18,12 +18,27 @@ describe('Home', () => {
     });
     it('should have email at left side"', async () => {
         const element = await page.$('#sidebar > a');
-        const text= await element.getProperty('textContent');
         await expect(page.evaluate(element => element.textContent, element)).resolves.toContain('joymon@gmail.com');
+    });
+    it("should have some WhatsNew",async()=>{
+        const element = await page.waitForSelector('content[source="WhatsNew"] > div > p');
+        const text= await element.getProperty('textContent');
+        
+        await expect(page.evaluate(element=>element.textContent,element)).resolves.toBeTruthy();
+        await expect(page.evaluate(element=>element.textContent.length,element)).resolves.toBeGreaterThan(15);
+        await expect(page.evaluate(element=>element.textContent,element)).resolves.not.toContain("Dummy content");
+    });
+    it("should have some WhoAmI",async()=>{
+        const element = await page.waitForSelector('content[source="WhoAmI"] > div > p');
+        const text= await element.getProperty('textContent');
+        
+        await expect(page.evaluate(element=>element.textContent,element)).resolves.toBeTruthy();
+        await expect(page.evaluate(element=>element.textContent.length,element)).resolves.toBeGreaterThan(15);
+        await expect(page.evaluate(element=>element.textContent,element)).resolves.not.toContain("Dummy content");
     });
     it('should be copyrighted current year"', async () => {
         const element = await page.$('.footer > .ng-binding');
         const text= await element.getProperty('textContent');
-        await expect(page.evaluate(element => element.textContent, element)).resolves.toContain('2020');
+        await expect(page.evaluate(element => element.textContent, element)).resolves.toContain(new Date().getFullYear());
     });
 });
