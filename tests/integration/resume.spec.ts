@@ -17,8 +17,18 @@ describe('Home', () => {
         const blogsView = await page.waitForSelector('resume');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
     });
-    it('should have download resume link',async ()=>{
+    it('should have download resume link', async () => {
         const aResume = await page.waitForSelector('a[href="uploads/joy_resume.pdf');
-        await expect(page.evaluate(element=>element,aResume)).resolves.toBeTruthy();
+        await expect(page.evaluate(element => element, aResume)).resolves.toBeTruthy();
+    });
+    it('should have view resume link', async () => {
+        const aResume = await page.waitForSelector('a[href="#/ViewResume');
+        await expect(page.evaluate(element => element, aResume)).resolves.toBeTruthy();
+    });
+    //TODO - Headless mode don't navigate to pdf - https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#pagegotourl-options
+    it('should have working downloadable resume link', async () => {
+        //const aResume = await page.goto('http://localhost:8080/uploads/joy_resume.pdf');
+        //const embed = await page.url();
+        //await expect(embed).toBe("http://localhost:8080/uploads/joy_resume.pdf");
     });
 });
