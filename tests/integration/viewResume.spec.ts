@@ -9,4 +9,12 @@ describe("viewResume",()=>{
         //const title= await page.title();
         await expect(page.title()).resolves.toMatch('Joymon Online');
     });
+    it('should have the view-resume tag',async ()=>{
+        const blogsView = await page.waitForSelector('view-resume');
+        await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+    })
+    it('should have the iframe inside view-resume ',async ()=>{
+        const blogsView = await page.waitForSelector('view-resume > iframe');
+        await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+    })
 });
