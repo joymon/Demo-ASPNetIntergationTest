@@ -5,8 +5,8 @@ import feedServiceModule = require ('./feed.service');
 
     export class BlogFeedController implements ng.IController {
         static $inject = ['DataService'];
-        dataServie: feedServiceModule.BlogDataService;
-        constructor( dataServie: feedServiceModule.BlogDataService) {
+        dataServie: feedServiceModule.FeedService;
+        constructor( dataServie: feedServiceModule.FeedService) {
             console.log("BlogFeedController created");
             this.dataServie = dataServie;
             //this.Feed.entries.push({ Title: "Test Title", publishDate: new Date(), content: "test content", link: 'test ur' });
