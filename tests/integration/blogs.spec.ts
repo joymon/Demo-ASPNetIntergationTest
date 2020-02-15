@@ -19,5 +19,28 @@ describe('Home', () => {
         const blogsView = await page.waitForSelector('blogs-view');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
     });
-
+    it('should have JoymonsCode blog-feed',async()=>{
+        const blogsView = await page.waitForSelector('blog-feed[rss="JoymonsCode"]');
+        await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+        //Wait for the selector as it is loaded from AJAX call.
+        await page.waitForSelector('.blogItems > div');
+        const blogsItemsCount = (await page.$$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div')).length;
+        expect(blogsItemsCount).toBe(3);
+    });
+    it('should have Joyfulwpf blog-feed',async()=>{
+        const blogsView = await page.waitForSelector('blog-feed[rss="Joyfulwpf"]');
+        await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+        //Wait for the selector as it is loaded from AJAX call.
+        await page.waitForSelector('.blogItems > div');
+        const blogsItemsCount = (await page.$$('blog-feed[rss="Joyfulwpf"] > div > .blogItems > div')).length;
+        expect(blogsItemsCount).toBe(3);
+    });
+    it('should have silverlightedweb blog-feed',async()=>{
+        const blogsView = await page.waitForSelector('blog-feed[rss="silverlightedweb"]');
+        await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+        //Wait for the selector as it is loaded from AJAX call.
+        await page.waitForSelector('.blogItems > div');
+        const blogsItemsCount = (await page.$$('blog-feed[rss="silverlightedweb"] > div > .blogItems > div')).length;
+        expect(blogsItemsCount).toBe(3);
+    });
 });
