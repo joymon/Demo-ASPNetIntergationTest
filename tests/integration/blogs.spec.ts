@@ -26,6 +26,10 @@ describe('Home', () => {
         await page.waitForSelector('.blogItems > div');
         const blogsItemsCount = (await page.$$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div')).length;
         expect(blogsItemsCount).toBe(3);
+
+        //TODO - Add test case to check date and text of any of the item.
+        var element = await page.$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div:nth-child(2) > table > tbody > tr:nth-child(1) > td');
+        await expect(page.evaluate(element=>element.textContent.length,element)).resolves.toBeGreaterThan(3);
     });
     it('should have Joyfulwpf blog-feed',async()=>{
         const blogsView = await page.waitForSelector('blog-feed[rss="Joyfulwpf"]');
