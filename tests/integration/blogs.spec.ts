@@ -23,7 +23,7 @@ describe('Home', () => {
         const blogsView = await page.waitForSelector('blog-feed[rss="JoymonsCode"]');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
         //Wait for the selector as it is loaded from AJAX call.
-        await page.waitForSelector('.blogItems > div');
+        await page.waitForSelector('blog-feed[rss="JoymonsCode"] > div > .blogItems > div');
         const blogsItemsCount = (await page.$$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div')).length;
         expect(blogsItemsCount).toBe(3);
 

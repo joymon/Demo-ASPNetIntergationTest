@@ -13,11 +13,24 @@ describe('Home', () => {
     });
     it('should navigate to Projects page', async () => {
         await expect(page.title()).resolves.toMatch('Joymon Online');
-        //await page.waitFor(1000);
         const element = await page.$('[href="#/Projects"]');
         await element.click();
         const ProjectsView = await page.waitForSelector('projects');
         await expect(page.evaluate(element => element, ProjectsView)).resolves.toBeTruthy();
     });
+    it('should have 5 project sections', async () => {
+        await page.waitForSelector('#content > div > h4')
+        const elementLength = (await page.$$('#content > div')).length;
+        expect(elementLength).toBe(5);
+    });
+    it('should have header in first project', async () => {
+        var element= await page.waitForSelector('#content > div > h4');
 
+        //const elementLength = (await page.$$('#content > div')).length;
+        expect( page.evaluate(element=>element.textContent.length , element)).resolves.toBeGreaterThan(5);
+    });
+    it('should have desc in first project', async () => {
+        var element= await page.waitForSelector('#content > div > p');
+        expect( page.evaluate(element=>element.textContent.length , element)).resolves.toBeGreaterThan(5);
+    });
 });
