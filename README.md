@@ -36,11 +36,11 @@ Currently there are only integration tests.
 # Deployment
 
 ## Development
--   Automatically after each each from AppVeyor
+-   Automatically after each build from AppVeyor
 
 ## Production
 - Create a release.
-- Release create a tag and Travis CI will release when there is a tag.
+- Release create a tag. Travis CI will release when there is a tag.
 
 # Hosting
 - Development [https://joymon.github.io/JoymonOnline.In/](https://joymon.github.io/JoymonOnline.In/)
