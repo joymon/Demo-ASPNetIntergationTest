@@ -14,6 +14,10 @@ Source code of my personal site www.joymononline.in.
 
 # Development
 
+## Architecture
+- [C4 - Context Diagram](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/JoymonOnline.In/master/diagrams/context.puml)
+- [C4 - Container Diagram](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/JoymonOnline.In/master/diagrams/container.puml)
+
 ## How to run locally
 - Clone
 - `npm install`
