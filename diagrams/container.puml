@@ -10,7 +10,7 @@ System_Boundary(joymononline, "JoymonOnline"){
 
 System_Ext(blogger,"Blogger","Blogger")
 System_Ext(stackOverflow,"StackOverflow","A question answer site")
-System_Ext(github,"StackOverflow","A question answer site")
+System_Ext(github,"GitHub","Provides hosting for software development version control using Git")
 System_Ext(linkedIn,"Linked In","A professional networking site")
 System_Ext(twitter,"Twitter","Microblogging site")
 System_Ext(facebook,"Facebook","Social networking site")
