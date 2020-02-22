@@ -3,8 +3,8 @@
 
 Person(personAlias, "Internet User", "Any user accessing the web site")
 System_Boundary(joymononline, "JoymonOnline"){
-    Container(browser,"WebBrowser","HTML,JavaScript, CSS,AngularJS,","Any web browser supporting AngularJS")
-    Container(joymonOnlineWebSite, "JoymonOnlineWebSite", "HTML, CSS, Git Pages", "Optional Description")
+    Container(browser,"WebBrowser","HTML, JavaScript, CSS, AngularJS","Any web browser supporting AngularJS")
+    Container(joymonOnlineWebSite, "JoymonOnlineWebSite", "HTML, CSS, JavaScript, Git Pages", "Serves web site. Static files")
     Rel(browser,joymonOnlineWebSite,"Access the website","TCP 443,http(s)")
 }
 
