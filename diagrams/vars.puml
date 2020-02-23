@@ -1,3 +1,11 @@
 @startuml
 !define USER_DESC Any user accessing the web site
+!define BLOGGER_SYS_DESC A blog-publishing service
+!define SO_SYS_DESC A question answer site
+!define GH_SYS_DESC Provides hosting for software development version control using Git
+!define LI_SYS_DESC A professional networking site
+!define GD_SYS_DESC Hosts, edit and share documents
+!define TWITTER_SYS_DESC Microblogging site
+!define YT_SYS_DESC Video hosting web site
+!define FB_SYS_DESC Social networking site
 @enduml

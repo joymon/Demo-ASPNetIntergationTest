@@ -1,17 +1,27 @@
 @startuml JoymonOnline_Context
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
 !includeurl https://raw.githubusercontent.com/joymon/JoymonOnline.In/master/diagrams/vars.puml
+'Uncomment the below to work locally
+'!include vars.puml
+
 Person(personAlias, "Internet User", USER_DESC)
 System(joymononline, "JoymonOnline", "JoymonOnline Website")
-System_Ext(blogger,"Blogger","Blogger")
-System_Ext(stackOverflow,"StackOverflow","A question answer site")
-System_Ext(github,"GitHub","Provides hosting for software development version control using Git")
-System_Ext(linkedIn,"Linked In","A professional networking site")
-System_Ext(googleDocs,"Google Docs","Hosts, edit and share documents")
+System_Ext(blogger,"Blogger",BLOGGER_SYS_DESC)
+System_Ext(stackOverflow,"StackOverflow",SO_SYS_DESC)
+System_Ext(github,"GitHub",GH_SYS_DESC)
+System_Ext(linkedIn,"Linked In",LI_SYS_DESC)
+System_Ext(googleDocs,"Google Docs",GD_SYS_DESC)
+System_Ext(twitter,"Twitter",TWITTER_SYS_DESC)
+System_Ext(facebook,"Facebook",FB_SYS_DESC)
+System_Ext(youtube,"YouTube",YT_SYS_DESC)
 Rel(personAlias, joymononline, "Access site", "TCP 443,http,Anonymous")
 Rel(joymononline,blogger,"Access blog feed","TCP 443,http(s)")
 Rel(joymononline,stackOverflow,"Access profile data to show badge","TCP 443,http(s)")
 Rel(joymononline,github,"Access the project details, get whatnew page contents","TCP 443,http(s)")
 Rel(joymononline,linkedIn,"Access profile to show profile image","TCP 443,http(s)")
 Rel(joymononline,googleDocs,"Preview of resume","TCP 443,http(s)")
+Rel(joymononline,twitter,"Navigtes","HTML Link")
+Rel(joymononline,facebook,"Navigtes","HTML Link")
+Rel(joymononline,youtube,"Navigtes","HTML Link")
+
 @enduml

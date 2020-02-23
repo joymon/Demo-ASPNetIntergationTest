@@ -1,21 +1,23 @@
 @startuml C4_Elements
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/joymon/JoymonOnline.In/master/diagrams/vars.puml
+'Uncomment the below to work locally
+'!include vars.puml
 
-Person(personAlias, "Internet User", "Any user accessing the web site")
+Person(personAlias, "Internet User", USER_DESC)
 System_Boundary(joymononline, "JoymonOnline"){
     Container(browser,"WebBrowser","HTML, JavaScript, CSS, AngularJS","Any web browser supporting AngularJS")
     Container(joymonOnlineWebSite, "JoymonOnlineWebSite", "HTML, CSS, JavaScript, Git Pages", "Serves web site. Static files")
     Rel(browser,joymonOnlineWebSite,"Access the website","TCP 443,http(s), Anonymous")
 }
-
-System_Ext(blogger,"Blogger","Blogger")
-System_Ext(stackOverflow,"StackOverflow","A question answer site")
-System_Ext(github,"GitHub","Provides hosting for software development version control using Git")
-System_Ext(linkedIn,"Linked In","A professional networking site")
-System_Ext(twitter,"Twitter","Microblogging site")
-System_Ext(facebook,"Facebook","Social networking site")
-System_Ext(youtube,"YouTube","Video hosting web site")
-System_Ext(googleDocs,"Google Docs","Hosts, edit and share documents")
+System_Ext(blogger,"Blogger",BLOGGER_SYS_DESC)
+System_Ext(stackOverflow,"StackOverflow",SO_SYS_DESC)
+System_Ext(github,"GitHub",GH_SYS_DESC)
+System_Ext(linkedIn,"Linked In",LI_SYS_DESC)
+System_Ext(twitter,"Twitter",TWITTER_SYS_DESC)
+System_Ext(facebook,"Facebook",FB_SYS_DESC)
+System_Ext(youtube,"YouTube",YT_SYS_DESC)
+System_Ext(googleDocs,"Google Docs",GD_SYS_DESC)
 Rel(browser,blogger,"Access blog feed","TCP 443,http(s)")
 Rel(browser,stackOverflow,"Access profile data to show badge","TCP 443,http(s)")
 Rel(personAlias, browser, "Access site", "Opens browser and navigate")
