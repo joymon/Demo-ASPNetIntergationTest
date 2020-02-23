@@ -1,7 +1,7 @@
 @startuml JoymonOnline_Context
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
-
-Person(personAlias, "Internet User", "Any user accessing the web site")
+!include vars.puml
+Person(personAlias, "Internet User", USER_DESC)
 System(joymononline, "JoymonOnline", "JoymonOnline Website")
 System_Ext(blogger,"Blogger","Blogger")
 System_Ext(stackOverflow,"StackOverflow","A question answer site")

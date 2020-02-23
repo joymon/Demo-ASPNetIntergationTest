@@ -1,0 +1,3 @@
+@startuml
+!define USER_DESC Any user accessing the web site
+@enduml
