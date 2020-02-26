@@ -6,7 +6,7 @@
 | Deps | [![dependencies](https://david-dm.org/joymon/JoymonOnline.In.svg)](https://david-dm.org/joymon/JoymonOnline.In)|
 | Security | [![Known Vulnerabilities](https://snyk.io/test/github/joymon/JoymonOnline.In/badge.svg)](https://snyk.io/test/github/joymon/JoymonOnline.In)  [![Total alerts](https://img.shields.io/lgtm/alerts/g/joymon/JoymonOnline.In.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/joymon/JoymonOnline.In/alerts/) |
 | Test | [![codecov](https://codecov.io/gh/joymon/JoymonOnline.In/branch/master/graph/badge.svg)](https://codecov.io/gh/joymon/JoymonOnline.In) |
-| Issues | [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/joymononline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open") |
+| Issues | [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/joymon/JoymonOnline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/JoymonOnline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open") |
 | Deploy |  [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In) |
 
 # JoymonOnline.In
