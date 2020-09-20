@@ -19,9 +19,12 @@ describe('Home', () => {
         const blogsView = await page.waitForSelector('blogs-view');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
     });
-    it('should have JoymonsCode blog-feed',async()=>{
+    it('should have JoymonsCode blog-feed', async () => {
         const blogsView = await page.waitForSelector('blog-feed[rss="JoymonsCode"]');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+    });
+    it('should have 3 entries on JoymonsCode blog-feed', async () => {
+
         //Wait for the selector as it is loaded from AJAX call.
         await page.waitForSelector('blog-feed[rss="JoymonsCode"] > div > .blogItems > div');
         const blogsItemsCount = (await page.$$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div')).length;
@@ -29,17 +32,19 @@ describe('Home', () => {
 
         //TODO - Add test case to check date and text of any of the item.
         var element = await page.$('blog-feed[rss="JoymonsCode"] > div > .blogItems > div:nth-child(2) > table > tbody > tr:nth-child(1) > td');
-        await expect(page.evaluate(element=>element.textContent.length,element)).resolves.toBeGreaterThan(3);
+        await expect(page.evaluate(element => element.textContent.length, element)).resolves.toBeGreaterThan(3);
     });
-    it('should have Joyfulwpf blog-feed',async()=>{
+    it('should have Joyfulwpf blog-feed', async () => {
         const blogsView = await page.waitForSelector('blog-feed[rss="Joyfulwpf"]');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
+    });
+    it('should have 3 entries on Joyfulwpf blog-feed', async () => {
         //Wait for the selector as it is loaded from AJAX call.
-        await page.waitForSelector('.blogItems > div');
+        await page.waitForSelector('blog-feed[rss="Joyfulwpf"] > div > .blogItems > div');
         const blogsItemsCount = (await page.$$('blog-feed[rss="Joyfulwpf"] > div > .blogItems > div')).length;
         expect(blogsItemsCount).toBe(3);
     });
-    it('should have silverlightedweb blog-feed',async()=>{
+    it('should have silverlightedweb blog-feed', async () => {
         const blogsView = await page.waitForSelector('blog-feed[rss="silverlightedweb"]');
         await expect(page.evaluate(element => element, blogsView)).resolves.toBeTruthy();
         //Wait for the selector as it is loaded from AJAX call.
