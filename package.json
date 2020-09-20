@@ -15,7 +15,7 @@
     "angular": "^1.8.0",
     "angular-route": "^1.7.9",
     "angular-sanitize": "^1.7.9",
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.1",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.0",
     "file-loader": "^2.0.0",
