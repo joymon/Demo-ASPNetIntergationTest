@@ -12,7 +12,7 @@
     "@types/jest-environment-puppeteer": "^4.3.1",
     "@types/node": "^6.14.9",
     "@types/puppeteer": "^2.0.0",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-route": "^1.7.9",
     "angular-sanitize": "^1.7.9",
     "codecov": "^3.6.5",
