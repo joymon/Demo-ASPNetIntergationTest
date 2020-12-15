@@ -1,6 +1,6 @@
 # environment variables
 environment:
-  nodejs_version: "8"
+  nodejs_version: "10"
   access_token:
     secure: YwffwDvba/ADlMJbtnOM7cKUqudcbYCt2K74HOtBvscwylmIMSRmrX2VKc+fuNjN
 skip_commits:
