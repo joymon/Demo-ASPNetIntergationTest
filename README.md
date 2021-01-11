@@ -1,3 +1,8 @@
+# JoymonOnline.In
+Source code of my AngularJS based personal site www.joymononline.in.
+
+> Currently replaced by Hugo based site. Soon this will be archived
+
 | Area      |      Badges  |
 |:----------|:-------------|
 | Build |[![Build status](https://ci.appveyor.com/api/projects/status/5mycvjhhmw36r6pl?svg=true)](https://ci.appveyor.com/project/joymon/demo-aspnetintergationtest) |
@@ -8,9 +13,6 @@
 | Test | [![codecov](https://codecov.io/gh/joymon/JoymonOnline.In/branch/master/graph/badge.svg)](https://codecov.io/gh/joymon/JoymonOnline.In) |
 | Issues | [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/joymon/JoymonOnline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/JoymonOnline.in.svg)](http://isitmaintained.com/project/joymon/joymononline.in "Percentage of issues still open") |
 | Deploy |  [![Deploy Status](https://travis-ci.org/joymon/JoymonOnline.In.svg)](https://travis-ci.org/joymon/JoymonOnline.In) |
-
-# JoymonOnline.In
-Source code of my personal site www.joymononline.in.
 
 # Development
 
